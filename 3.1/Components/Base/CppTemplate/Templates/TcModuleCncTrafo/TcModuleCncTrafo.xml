@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectFileGeneratorConfig useProjectInterface="true">
+	<FileDescription openFile="true">
+		<SourceFile>TcModuleCncTrafo.h</SourceFile>
+		<TargetFile>[!output HEADER_FILE_NAME]</TargetFile>
+		<Filter>Header Files</Filter>
+	</FileDescription>
+	<FileDescription openFile="true">
+		<SourceFile>TcModuleCncTrafo.cpp</SourceFile>
+		<TargetFile>[!output SOURCE_FILE_NAME]</TargetFile>
+		<Filter>Source Files</Filter>
+	</FileDescription>
+	<FileDescription renderOnly="true">
+		<SourceFile>TcModuleCncTrafo.tmc</SourceFile>
+		<TargetFile symbolName="TMC_FILE_NAME" useTempDirectory="true">[!output CLASS_SHORT_NAME].tmc</TargetFile>
+	</FileDescription>
+	<Symbols>
+		<Symbol>
+			<Name>TCPCH</Name>
+			<Value>TcPch</Value>
+		</Symbol>
+	</Symbols>
+</ProjectFileGeneratorConfig>

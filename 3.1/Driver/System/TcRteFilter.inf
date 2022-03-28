@@ -1,0 +1,98 @@
+;-------------------------------------------------------------------------
+; TcRteFilter.INF -- TwinCAT realtime ethernet filter driver
+;
+; Copyright (c) 2014 Beckhoff Automation GmbH .  All rights reserved.
+;
+;-------------------------------------------------------------------------
+
+[version]
+; Do not change these values
+Signature       = "$Windows NT$"
+Class           = NetService
+ClassGUID       = {4D36E974-E325-11CE-BFC1-08002BE10318}
+CatalogFile     = tcrtefilter.cat
+
+Provider        = %Bkhf%
+
+DriverVer       = 11/02/2021,3.1.0.302
+
+[Manufacturer]
+%Bkhf%=Bkhf,NTx86,NTia64,NTamd64
+
+[Bkhf.NTx86]
+%TcRteFilter_Desc%=Install, TcRteFilter
+
+[Bkhf.NTia64]
+%TcRteFilter_Desc%=Install, TcRteFilter
+
+[Bkhf.NTamd64]
+%TcRteFilter_Desc%=Install, TcRteFilter
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[Install]
+AddReg=Inst_Ndi
+Characteristics=0x40000
+
+NetCfgInstanceId="{2CFE63F5-82D9-4d70-8FB0-3C2A92E13330}"
+
+Copyfiles = tcrtefilter.copyfiles.sys
+
+[SourceDisksNames]
+1=%TcRteFilter_Desc%,"",,
+
+[SourceDisksFiles]
+tcrtefilter.sys=1
+
+[DestinationDirs]
+DefaultDestDir=12
+tcrtefilter.copyfiles.sys=12
+
+[TcRteFilter.copyfiles.sys]
+tcrtefilter.sys,,,2
+
+
+;-------------------------------------------------------------------------
+; Ndi installation support
+;-------------------------------------------------------------------------
+[Inst_Ndi]
+HKR, Ndi,Service,,"TcRteFilter"
+HKR, Ndi,CoServices,0x00010000,"TcRteFilter"
+HKR, Ndi,HelpText,,%TcRteFilter_HelpText%
+
+HKR, Ndi,FilterClass,, diagnostic
+HKR, Ndi,FilterType,0x00010001,2 ; Modifying filter
+HKR, Ndi\Interfaces,UpperRange,,"noupper"
+HKR, Ndi\Interfaces,LowerRange,,"nolower"
+HKR, Ndi\Interfaces, FilterMediaTypes,,"ethernet, wan, ppip"
+HKR, Ndi,FilterRunType,0x00010001, 1 ; Mandatory filter
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[Install.Services]
+AddService=TcRteFilter,,TcRteFilter_Service_Inst
+
+[TcRteFilter_Service_Inst]
+DisplayName     = %TcRteFilter_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 1 ;SERVICE_SYSTEM_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\TcRteFilter.sys
+LoadOrderGroup  = NDIS
+Description     = %TcRteFilter_Desc%
+AddReg          = Common.Params.reg, NdisImPlatformBindingOptions.reg
+
+[Install.Remove.Services]
+DelService=TcRteFilter,0x200 ; SPSVCINST_STOPSERVICE
+
+[Common.Params.reg]
+
+[NdisImPlatformBindingOptions.reg]
+HKR, Parameters, NdisImPlatformBindingOptions,0x00010001,0 ; Subscribe to default behavior
+
+[Strings]
+Bkhf = "BECKHOFF"
+TcRteFilter_Desc = "TwinCAT RT-Ethernet Filter Driver"
+TcRteFilter_HelpText = "TwinCAT RT-Ethernet Filter Driver"

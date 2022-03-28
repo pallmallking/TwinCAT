@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc>
+    <StringList>
+        <String>
+            <Id>1001</Id>
+            <Text>Text Id 1001</Text>
+        </String>
+        <String>
+            <Id>1002</Id>
+            <Text>Text Id 1002</Text>
+        </String>
+        <String>
+            <Id>1003</Id>
+            <Text>Text Id 1003</Text>
+        </String>
+    </StringList>
+    <UnitList>
+        <Unit>
+            <UnitRef>Position</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Speed</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Acceleration</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>m/s²</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--1 mm/s²-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>m/s²</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--1 mm/s²-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°/s²</Text>
+                <Factor>1</Factor>
+                <Format>%.0lf</Format>
+                <!--1 °/s²-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°/s²</Text>
+                <Factor>1</Factor>
+                <Format>%.0lf</Format>
+                <!--1 °/s²-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Time</UnitRef>
+            <Unit LcId="1033">
+                <Text>ms</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--µs-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>ms</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--µs-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>GainKv</UnitRef>
+            <Unit LcId="1033">
+                <Text>1/s</Text>
+                <Factor>100</Factor>
+                <Format>%.2lf</Format>
+                <!--0.01 * 1/s-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>1/s</Text>
+                <Factor>100</Factor>
+                <Format>%.2lf</Format>
+                <!--0.01 * 1/s-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Percent</UnitRef>
+            <Unit LcId="1033">
+                <Text>%</Text>
+                <Factor>10</Factor>
+                <Format>%.1lf</Format>
+                <!--0,1%-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>%</Text>
+                <Factor>10</Factor>
+                <Format>%.1lf</Format>
+                <!--0,1%-->
+            </Unit>
+        </Unit>
+    </UnitList>
+    <UserGroupList>
+        <UserGroup>Administrator</UserGroup>
+        <UserGroup>Supervisor</UserGroup>
+        <UserGroup>Superuser</UserGroup>
+        <UserGroup>User</UserGroup>
+        <UserGroup>No access</UserGroup>
+    </UserGroupList>
+    <DataTypes>
+        <DataType>
+            <Name>Data1</Name>
+            <Type>float</Type>
+        </DataType>
+        <DataType>
+            <Name>Data2</Name>
+            <Type>double</Type>
+        </DataType>
+    </DataTypes>
+    <ParaList>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">General tool parameter</Text>
+                <Text LcId="1031">Allgemeine Werkzeugparameter</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>wz[0].typ</Name>
+            <Nr>P-TOOL-00001</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Type</Text>
+                <Text LcId="1031">Typ</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">To differentiate between milling, turning and grinding tools, this parameter is allocated.</Text>
+                <Text LcId="1031">Zur Unterscheidung der Werkzeugtypen wird dieser Parameter belegt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].laenge</Name>
+            <Nr>P-TOOL-00003</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Tool length</Text>
+                <Text LcId="1031">Werkzeuglänge</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">This parameter defines the tool length.</Text>
+                <Text LcId="1031">In diesem Parameter wird die Werkzeuglänge eingetragen.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].radius</Name>
+            <Nr>P-TOOL-00004</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Tool radius</Text>
+                <Text LcId="1031">Werkzeugradius</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">This parameter defines the tool radius.</Text>
+                <Text LcId="1031">In diesem Parameter wird der Werkzeugradius eingetragen.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].ax_versatz[0]</Name>
+            <Nr>P-TOOL-00006</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Axis offsets</Text>
+                <Text LcId="1031">Achsversatzmaße</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">For each tool for every axis an offset can be defined.</Text>
+                <Text LcId="1031">Pro Werkzeug kann für jede Achse ein Versatzparameter definiert werden.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].mass_einheit</Name>
+            <Nr>P-TOOL-00008</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of length, radius and axes offsets</Text>
+                <Text LcId="1031">Maßeinheit von Länge, Radius und Achsversätzen</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of length, radius and axes offsets of the tool.</Text>
+                <Text LcId="1031">Dieser Parameter definiert, in welcher Maßeinheit Länge, Radius und Achsversätze des Werkzeuges angegeben sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].gueltig</Name>
+            <Nr>P-TOOL-00005</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Validity flag</Text>
+                <Text LcId="1031">Gültigkennung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">If the data of a tool is allowed to be included, then the validity flag must be set to TRUE.</Text>
+                <Text LcId="1031">Wenn die Daten eines Werkzeugs verwendet werden dürfen, muss die Gültigkennung auf TRUE gesetzt werden.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].tool_fixed</Name>
+            <Nr>P-TOOL-00010</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Tool fixed / alignable</Text>
+                <Text LcId="1031">Werkzeug feststehend / ausrichtbar</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter will be assigned with TRUE, if, in combination with the functionality 'Machining Coordinate System' [PROG], the tool's orientation relative to the machine-axes coordinate system, cannot (e.g. because of not existing rotary axes) or should not be altered. In this case the tool axes offsets (P-TOOL-00006), as components of the tool offset vector, always relate to the machine axes.</Text>
+                <Text LcId="1031">Dieser Parameter wird mit TRUE belegt, wenn in Verbindung mit der Funktionalität 'Bearbeitungskoordinatensystem' [PROG] das Werkzeug in seiner Orientierung bzgl. des Maschinenkoordinatensystems nicht verändert werden kann (z.B. aufgrund fehlender rotatorischer Achsen) oder soll. Die Werkzeugachsversätze (P-TOOL-00006) als Komponenten des Werkzeugversatzvektors beziehen sich in diesem Fall immer auf die Maschinenachsen.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Free usable parameters</Text>
+                <Text LcId="1031">Frei verwendbare Parameter</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>wz[0].param[0]</Name>
+            <Nr>P-TOOL-00007</Nr>
+            <Help />
+            <Type>REAL64</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Additional tool parameters</Text>
+                <Text LcId="1031">Zusätzliche Werkzeugparameter</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the element, additional parameters for each tool can be defined application dependent.</Text>
+                <Text LcId="1031">Über diesen Parameter können zusätzliche Parameter pro Werkzeug vom Anwender frei definiert werden.</Text>
+            </Comment>
+            <Format>%.1f</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Tool tip radius compensation</Text>
+                <Text LcId="1031">Schneidenradiuskompensation</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>wz[0].srk_lage</Name>
+            <Nr>P-TOOL-00002</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Cutter orientation</Text>
+                <Text LcId="1031">Schneidenlage</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">For turning tools (P-TOOL-00001 = 1) the orientation of the cutter with respect to the machining plane has to be specified through the parameter.Ident. codes 1..9 for the orientation of turning tool tip in the machining plane.</Text>
+                <Text LcId="1031">Bei Drehwerkzeugen (P-TOOL-00001 = 1) ist die Lage der Werkzeugschneide bezüglich der Bearbeitungsebene über diesen Parameter anzugeben.Kennung 1..9 für die Lage der Drehwerkzeugschneide in der Bearbeitungsebene.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Transformation specific tool parameters</Text>
+                <Text LcId="1031">Transformationsspezifische Werkzeugparameter</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>wz[0].kin_id</Name>
+            <Nr>P-TOOL-00011</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Kinematics-ID</Text>
+                <Text LcId="1031">Kinematik-ID</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The kinematics-ID serves for identifying the machine- resp. tool head specific kinematics types implemented in the CNC.This parameter defines the kinematics transformation to be used for the tool.. Assigned with 0, the kinematics-ID results from the default setting in the channel parameters P-CHAN-00032 resp. from the programming in NC-program (#KIN ID [...] or #TRAFO [...]).The kinematics-ID refers always to a transformation, which is defined in the channel parameters in a data set of the first kinematic step (kin_step[0].trafo[*].id resp. trafo[*].id)</Text>
+                <Text LcId="1031">Die Kinematik-ID dient zur Identifizierung der in der Steuerung implementierten, maschinen- bzw. werkzeugkopfspezifischen Kinematiktypen.Über diesen Parameter wird die für das Werkzeug zu verwendende Kinematik-Transformation festgelegt. Bei Belegung mit dem Wert 0 ergibt sich die Kinematik-ID aus der Defaulteinstellung gemäß P-CHAN-00032 bzw. aus der Programmierung im NC-Programm (#KIN ID [...] oder #TRAFO [...]).Die Kinematik-ID bezieht sich also immer auf eine Transformation, die in den Kanalparametern in einem Datensatz der ersten Kinematikstufe (kin_step[0].trafo[*].id bzw. trafo[*].id) definiert sein muß!</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Dynamic limits of tool</Text>
+                <Text LcId="1031">Dynamikgrenzen des Werkzeugs</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>wz[0].log_ax_nr_spdl</Name>
+            <Nr>P-TOOL-00012</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical spindle axis number</Text>
+                <Text LcId="1031">Logische Spindelachsnummer</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The dynamic data of the tool are assigned via the logical axis number to the spindle, which should move the tool after the tool change. If the logical axis number is not entered or set to zero, no dynamic data are transmitted to the spindle.</Text>
+                <Text LcId="1031">Die Dynamikdaten des Werkzeuges sind über die logische Achsnummer der Spindel zugeordnet, die das Werkzeug nach dem Einwechseln tragen soll. Wird die logische Achsnummer mit Null belegt, so werden beim Werkzeugwechsel keine Dynamikdaten an die Spindel weitergeleitet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].vb_min</Name>
+            <Nr>P-TOOL-00013</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Minimum speed</Text>
+                <Text LcId="1031">Minimale Drehgeschwindigleit</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Speed</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Minimum tool speed.</Text>
+                <Text LcId="1031">Minimale Drehgeschwindigkeit des Werkzeuges.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].vb_max</Name>
+            <Nr>P-TOOL-00014</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Maximum speed</Text>
+                <Text LcId="1031">Maximale Drehgeschwindigkeit</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Speed</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Maximum tool speed.</Text>
+                <Text LcId="1031">Maximale Drehgeschwindigkeit des Werkzeuges.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].a_max</Name>
+            <Nr>P-TOOL-00015</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Maximum acceleration</Text>
+                <Text LcId="1031">Maximale Beschleunigung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">°/s2</Text>
+                <Text LcId="1033">°/s2</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Maximum tool acceleration.</Text>
+                <Text LcId="1031">Maximale Beschleunigung des Werkzeuges.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].kinematic.param[0]</Name>
+            <Nr>P-TOOL-00009</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Kinematic parameters</Text>
+                <Text LcId="1031">Kinematikparameter</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter s serve for tool dependent parameterizing of the kinematics transformation (RTCP / TLC / TOOL ORI CS [PROG]). Their allocation will be defined application specific.</Text>
+                <Text LcId="1031">Diese Parameter dienen zur werkzeugabhängigen Parametrierung der kinematischen Transformation (RTCP / TLC / TOOL ORI CS [PROG]). Ihre Belegung wird applikationsspezifisch festgelegt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+                <ArrayIndex No="1">70</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].path[0].radius</Name>
+            <Nr>P-TOOL-00020</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Tool radius</Text>
+                <Text LcId="1031">Werkzeugradius</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">In this parameter the tool radius for the specific paths are entered.</Text>
+                <Text LcId="1031">In diesem Parameter wird der Werkzeugradius für den jeweiligen Pfad eingetragen.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+                <ArrayIndex No="1">2</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].grinding_disc_min_width</Name>
+            <Nr>P-TOOL-00034</Nr>
+            <Help />
+            <Type>REAL64</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Minimum grinding disc width</Text>
+                <Text LcId="1031">Minimale Schleifscheibenbreite</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Currently this parameter is not used.</Text>
+                <Text LcId="1031">Dieser Parameter wird momentan nicht verwendet.</Text>
+            </Comment>
+            <Format>%f</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].grinding_disc_min_radius</Name>
+            <Nr>P-TOOL-00033</Nr>
+            <Help />
+            <Type>REAL64</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Minimum grinding disc radius</Text>
+                <Text LcId="1031">Minimaler Schleifscheibenradius</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Currently this parameter is not used.</Text>
+                <Text LcId="1031">Dieser Parameter wird momentan nicht verwendet.</Text>
+            </Comment>
+            <Format>%f</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].grinding_max_infeed</Name>
+            <Nr>P-TOOL-00031</Nr>
+            <Help />
+            <Type>REAL64</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Maximum discrete infeed</Text>
+                <Text LcId="1031">Maximale diskrete Zustellung</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The maximum discrete input is the greatest relative modification which can be assigned through the PLC.</Text>
+                <Text LcId="1031">Die maximale diskrete Zustellung legt die maximale relative Änderung fest, die über die PLC beauftragt werden kann.</Text>
+            </Comment>
+            <Format>%f</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].grinding_wear_const</Name>
+            <Nr>P-TOOL-00030</Nr>
+            <Help />
+            <Type>REAL64</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Wear constant</Text>
+                <Text LcId="1031">Verschleißkonstante</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">0.1µm/m</Text>
+                <Text LcId="1031">0.1µm/m</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The wear constant is used for the calculation of continuous wear. It can also be programmed alternatively in the NC program (#OTC […], [FCT-C20].</Text>
+                <Text LcId="1031">Die Verschleißkonstante wird zur kontinuierlichen Ermittlung des Werkzeugverschleißes verwendet. Sie kann alternativ auch im NC-Programm definiert werden (#OTC […], [FCT-C20].</Text>
+            </Comment>
+            <Format>%f</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].gear_inv_direction_no_stop</Name>
+            <Nr>P-TOOL-00019</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Inversion of rotation direction without spindle standstill</Text>
+                <Text LcId="1031">Drehrichtungsumkehr ohne Spindelstillstand</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Tools with a gear which inverses movement direction (s. P-TOOL-00018) requires a spindle stop on exchange. Otherwise the CNC generates the error message P-ERR-60290.If the parameter is set (1), the evaluation of the tool rotation direction is delayed to the next programmed spindle direction change (M03/M04 or M04/M03). The spindle does not stop! For example this is useful for aggregates with several, simultaneously rotating tools.</Text>
+                <Text LcId="1031">Beim Einwechseln eines Werkzeugs mit Werkzeuggetriebe, bei dem sich die Drehrichtung ändert (s. P-TOOL-00018) muss die Spindel stehen, ansonsten erzeugt die CNC die Fehlermeldung P-ERR-60290.Falls der Parameter gesetzt (1) ist, wird die Drehrichtungsänderung des Werkzeugs erst bei einem programmierten Wechsel der Spindeldrehrichtung (M03/M04 bzw. M04/M03) ausgewertet. Die Spindel hält dabei nicht an! Dies ist z.B. bei einem Aggregat mit mehreren, gleichzeitig rotierenden Werkzeugen sinnvoll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].gear_inv_direction</Name>
+            <Nr>P-TOOL-00018</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Reversal of rotation direction by gear</Text>
+                <Text LcId="1031">Drehrichtungsumkehr durch Getriebe</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033"> If the direction of rotation is changed by the tool gear, by setting of the parameter to 1 a change of the rotation direction in the position controller can be defined. This is executed as soon as a tool change is performed.</Text>
+                <Text LcId="1031"> Falls sich die Bewegungsrichtung durch das Werkzeuggetriebe umkehrt, kann durch Setzen dieses Parameters (1) eine Änderung der Bewegungsrichtung im Lageregler veranlasst werden, sobald das entsprechende Werkzeug ein- bzw. ausgewechselt wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].gear_ratio_denom</Name>
+            <Nr>P-TOOL-00017</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Gear ratio of a tool (Denominator)</Text>
+                <Text LcId="1031">Getriebeübersetzung des Werkzeugs (Nenner)</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">If the tool has a gear, the ratio can be set in the parameters gear_ratio_num and gear_ratio_denom. As soon as the tool is changed, in position controller a gear switch is executed. Thus the gear ratio has not to take into consideration on programming of the tool speed.</Text>
+                <Text LcId="1031">Falls das Werkzeug ein Getriebe besitzt, kann in diesen Parametern die Getriebeübersetzung angegeben werden. Sobald das Werkzeug ein- bzw. ausgewechselt wird, findet dann im Lageregler ein Getriebeschalten statt. Dadurch muss die Getriebeübersetzung bei der Programmierung der Werkzeugdrehzahl nicht berücksichtigt werden.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].gear_ratio_num</Name>
+            <Nr>P-TOOL-00016</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Gear ratio of a tool (Numerator)</Text>
+                <Text LcId="1031">Getriebeübersetzung des Werkzeugs (Zähler)</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">If the tool has a gear, the ratio can be set in the parameters gear_ratio_num and gear_ratio_denom. As soon as the tool is changed, in position controller a gear switch is executed. Thus the gear ratio has not to take into consideration on programming of the tool speed.</Text>
+                <Text LcId="1031">Falls das Werkzeug ein Getriebe besitzt, kann in diesen Parametern die Getriebeübersetzung angegeben werden. Sobald das Werkzeug ein- bzw. ausgewechselt wird, findet dann im Lageregler ein Getriebeschalten statt. Dadurch muss die Getriebeübersetzung bei der Programmierung der Werkzeugdrehzahl nicht berücksichtigt werden.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>wz[0].wz_kopf_versatz[0]</Name>
+            <Nr>P-TOOL-00009</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Tool head offset parameter</Text>
+                <Text LcId="1031">Kopfversatzparameter</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">
+                </Text>
+                <Text LcId="1031">
+                </Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">201</ArrayIndex>
+                <ArrayIndex No="1">70</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+    </ParaList>
+</TcParaDesc>

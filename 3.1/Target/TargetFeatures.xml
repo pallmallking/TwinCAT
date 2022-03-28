@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TargetFeatures>
+	<Components>
+		<Component>
+			<Name>TcRTime</Name>
+		</Component>
+		<Component>
+			<Name>TcIo</Name>
+		</Component>
+		<Component>
+			<Name>TcCpp</Name>
+		</Component>
+		<Component>
+			<Name>TcNc</Name>
+		</Component>
+		<Component>
+			<Name>TcCnc</Name>
+		</Component>
+		<Component>
+			<Name>TcPlc30</Name>
+		</Component>
+		<Component>
+			<Name>TcSPlc</Name>
+		</Component>
+		 
+	</Components>
+</TargetFeatures>

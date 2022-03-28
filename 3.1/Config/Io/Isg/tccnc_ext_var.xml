@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TcParaDesc.xsd">
+	<StringList>
+		<String>
+			<Id>1001</Id>
+			<Text LcId="1031">Nr</Text>
+			<Text LcId="1033">No</Text>
+		</String>
+		<String>
+			<Id>1002</Id>
+			<Text LcId="1031">Kennung</Text>
+			<Text LcId="1033">Identifier</Text>
+		</String>
+		<String>
+			<Id>1003</Id>
+			<Text LcId="1031">Param-Nr</Text>
+			<Text LcId="1033">Param-Nr</Text>
+		</String>
+		<String>
+			<Id>1004</Id>
+			<Text LcId="1031">Hilfe</Text>
+			<Text LcId="1033">Help</Text>
+		</String>
+		<String>
+			<Id>1005</Id>
+			<Text LcId="1031">Typ</Text>
+			<Text LcId="1033">Type</Text>
+		</String>
+		<String>
+			<Id>1006</Id>
+			<Text LcId="1031">Parameter</Text>
+			<Text LcId="1033">Parameter</Text>
+		</String>
+		<String>
+			<Id>1007</Id>
+			<Text LcId="1031">Wert</Text>
+			<Text LcId="1033">Value</Text>
+		</String>
+		<String>
+			<Id>1008</Id>
+			<Text LcId="1031">Einheit</Text>
+			<Text LcId="1033">Unit</Text>
+		</String>
+		<String>
+			<Id>1009</Id>
+			<Text LcId="1031">Kommentar</Text>
+			<Text LcId="1033">Comment</Text>
+		</String>
+		<String>
+			<Id>1010</Id>
+			<Text LcId="1031">-</Text>
+			<Text LcId="1033">-</Text>
+		</String>
+	</StringList>
+	<UnitList>
+		<Unit>
+			<UnitRef>Position</UnitRef>
+			<Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+				<Text>mm</Text>
+				<Factor>10000</Factor>
+				<Format>%.3lf</Format>
+				<!--0.1 µm-->
+			</Unit>
+			<Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+				<Text>mm</Text>
+				<Factor>10000</Factor>
+				<Format>%.3lf</Format>
+				<!--0.1 µm-->
+			</Unit>
+			<Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+				<Text>°</Text>
+				<Factor>10000</Factor>
+				<Format>%.4lf</Format>
+				<!--0.1 x 10^-3°-->
+			</Unit>
+			<Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+				<Text>°</Text>
+				<Factor>10000</Factor>
+				<Format>%.4lf</Format>
+				<!--0.1 x 10^-3°-->
+			</Unit>
+		</Unit>
+		<Unit>
+			<UnitRef>Speed</UnitRef>
+			<Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+				<Text>m/min</Text>
+				<Factor>16666.66666666666</Factor>
+				<Format>%.2lf</Format>
+				<!--1 µm/s-->
+			</Unit>
+			<Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+				<Text>m/min</Text>
+				<Factor>16666.66666666666</Factor>
+				<Format>%.2lf</Format>
+				<!--1 µm/s-->
+			</Unit>
+			<Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+				<Text>°/s</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--10^-3°/s-->
+			</Unit>
+			<Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+				<Text>°/s</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--10^-3°/s-->
+			</Unit>
+		</Unit>
+		<Unit>
+			<UnitRef>Acceleration</UnitRef>
+			<Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+				<Text>m/s²</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--1 mm/s²-->
+			</Unit>
+			<Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+				<Text>m/s²</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--1 mm/s²-->
+			</Unit>
+			<Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+				<Text>°/s²</Text>
+				<Factor>1</Factor>
+				<Format>%.0lf</Format>
+				<!--1 °/s²-->
+			</Unit>
+			<Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+				<Text>°/s²</Text>
+				<Factor>1</Factor>
+				<Format>%.0lf</Format>
+				<!--1 °/s²-->
+			</Unit>
+		</Unit>
+		<Unit>
+			<UnitRef>Time</UnitRef>
+			<Unit LcId="1033">
+				<Text>ms</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--µs-->
+			</Unit>
+			<Unit LcId="1031">
+				<Text>ms</Text>
+				<Factor>1000</Factor>
+				<Format>%.2lf</Format>
+				<!--µs-->
+			</Unit>
+		</Unit>
+		<Unit>
+			<UnitRef>GainKv</UnitRef>
+			<Unit LcId="1033">
+				<Text>1/s</Text>
+				<Factor>100</Factor>
+				<Format>%.2lf</Format>
+				<!--0.01 * 1/s-->
+			</Unit>
+			<Unit LcId="1031">
+				<Text>1/s</Text>
+				<Factor>100</Factor>
+				<Format>%.2lf</Format>
+				<!--0.01 * 1/s-->
+			</Unit>
+		</Unit>
+		<Unit>
+			<UnitRef>Percent</UnitRef>
+			<Unit LcId="1033">
+				<Text>%</Text>
+				<Factor>10</Factor>
+				<Format>%.1lf</Format>
+				<!--0,1%-->
+			</Unit>
+			<Unit LcId="1031">
+				<Text>%</Text>
+				<Factor>10</Factor>
+				<Format>%.1lf</Format>
+				<!--0,1%-->
+			</Unit>
+		</Unit>
+	</UnitList>
+	<UserGroupList>
+		<UserGroup>Advanced</UserGroup>
+		<UserGroup>Standard</UserGroup>
+		<UserGroup>Basic</UserGroup>
+		<UserGroup>No access</UserGroup>
+	</UserGroupList>
+	<DataTypes>
+		<DataType>
+			<Name>Data1</Name>
+			<Type>CEdit</Type>
+		</DataType>
+		<DataType>
+			<Name>Data2</Name>
+			<Type>CEdit</Type>
+		</DataType>
+		<DataType>
+			<Name>BOOLEAN</Name>
+			<Type>CComboBox</Type>
+			<Comment>yes, no - type</Comment>
+			<Property>
+				<Name>0</Name>
+				<Value>0</Value>
+			</Property>
+			<Property>
+				<Name>1</Name>
+				<Value>1</Value>
+			</Property>
+		</DataType>
+		<DataType>
+			<Name>EditDialogTypes</Name>
+			<Type>CEditDialog</Type>
+			<Comment>Dialog for selecting M- and other functions concerning this type of list.</Comment>
+			<SubPara>
+				<Name>m_synch[%d]</Name>
+				<Nr>P-CHAN-00041</Nr>
+				<Type>MFunctionType</Type>
+				<Default-Value>MOS</Default-Value>
+				<DisplayName>
+					<Text LcId="1033">M-Function</Text>
+					<Text LcId="1031">M-Funktion</Text>
+				</DisplayName>
+			</SubPara>
+			<SubPara>
+				<Name>m_pre_outp[%d]</Name>
+				<Nr>P-CHAN-00070</Nr>
+				<Type>SGN32</Type>
+				<Default-Value>10000</Default-Value>
+				<DisplayName>
+					<Text LcId="1033">M-Pre-Output</Text>
+					<Text LcId="1031">M-Pre-Output</Text>
+				</DisplayName>
+			</SubPara>
+			<SubPara>
+				<Name>h_synch[%d]</Name>
+				<Nr>P-CHAN-00027</Nr>
+				<Type>MFunctionType</Type>
+				<Default-Value>MOS</Default-Value>
+				<DisplayName>
+					<Text LcId="1033">H-Function</Text>
+					<Text LcId="1031">H-Funktion</Text>
+				</DisplayName>
+			</SubPara>
+			<SubPara>
+				<Name>m_default_outp_ax_name[%d]</Name>
+				<Nr>P-CHAN-00039</Nr>
+				<Type>SGN32</Type>
+				<Default-Value>X</Default-Value>
+				<DisplayName>
+					<Text LcId="1033">Axis-M-Function</Text>
+					<Text LcId="1031">Achs-M-Funktion</Text>
+				</DisplayName>
+			</SubPara>
+		</DataType>
+		<DataType>
+			<Name>ExtVarStructName</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>ExtVarElementName</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>ExtVarElementType</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>ExtVarElementSynchronization</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>ExtVarElementAccessRights</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>ExtVarElementArrayElements</Name>
+			<Type>CEdit</Type>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>100</Elements>
+			</ArrayInfo>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name>MFunctionType</Name>
+			<Type>CComboBox</Type>
+			<Comment>List of M-Functions</Comment>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1000</Elements>
+			</ArrayInfo>
+			<Property>
+				<Name>NO_SYNCH</Name>
+				<Value>NO_SYNCH</Value>
+			</Property>
+			<Property>
+				<Name>MOS</Name>
+				<Value>MOS</Value>
+			</Property>
+			<Property>
+				<Name>MVS_SVS</Name>
+				<Value>MVS_SVS</Value>
+			</Property>
+			<Property>
+				<Name>MVS_SNS</Name>
+				<Value>MVS_SNS</Value>
+			</Property>
+			<Property>
+				<Name>MNS_SNS</Name>
+				<Value>MNS_SNS</Value>
+			</Property>
+			<Property>
+				<Name>MNE_SNS</Name>
+				<Value>MNE_SNS</Value>
+			</Property>
+			<Property>
+				<Name>MVS_SLM</Name>
+				<Value>MVS_SLM</Value>
+			</Property>
+			<Property>
+				<Name>MVS_SLP</Name>
+				<Value>MVS_SLP</Value>
+			</Property>
+			<Property>
+				<Name>MOS_TS</Name>
+				<Value>MOS_TS</Value>
+			</Property>
+			<Property>
+				<Name>BWD_SYNCH</Name>
+				<Value>BWD_SYNCH</Value>
+			</Property>
+			<Property>
+				<Name>FWD_SYNCH</Name>
+				<Value>FWD_SYNCH</Value>
+			</Property>
+			<Property>
+				<Name>MEP_SVS</Name>
+				<Value>MEP_SVS</Value>
+			</Property>
+			<Property>
+				<Name>MET_SVS</Name>
+				<Value>MET_SVS</Value>
+			</Property>
+			<Property>
+				<Name>FAW_SYNCH</Name>
+				<Value>FAW_SYNCH</Value>
+			</Property>
+		</DataType>
+	</DataTypes>
+	<ParaList>
+		<Para>
+			<Name>Comment</Name>
+			<Type> </Type>
+			<DisplayName>
+				<Text LcId="1033">General parameter</Text>
+				<Text LcId="1031">Allgemeine Parameter</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>anzahl_belegt</Name>
+			<Nr>P-VE-VAR-00001</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of used V.E.-variable descriptions</Text>
+				<Text LcId="1031">Anzahl der belegten V.E-Variablenbeschreibungen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>use_extended_string_var</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Increses the number of characters of typ STRING from 21 (0) to 128 (1)</Text>
+				<Text LcId="1031">Erhöht die Anzahl Zeichen Typ STRING von 21 (0) auf 128 (1)</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<Type> </Type>
+			<DisplayName>
+				<Text LcId="1033">Data types - structures</Text>
+				<Text LcId="1031">Datentypen - Strukturen</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.name</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarStructName</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Name of the structure</Text>
+				<Text LcId="1031">Name der Struktur</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">30</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.element&#91;0&#93;.name</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementName</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Name of the element of structure</Text>
+				<Text LcId="1031">Name des Elements der Struktur</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.element&#91;0&#93;.type</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementType</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Type of variable</Text>
+				<Text LcId="1031">Datentyp der Variable</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.element&#91;0&#93;.array_elements</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementArrayElements</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of elements of fields</Text>
+				<Text LcId="1031">Anzahl der Elemente des Feldes</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.element&#91;0&#93;.synchronisation</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementSynchronization</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Data access synchronously with processing</Text>
+				<Text LcId="1031">Datenzugriff synchron zur Bearbeitung</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>type&#91;0&#93;.element&#91;0&#93;.access_rights</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementAccessRights</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Write-/Read access</Text>
+				<Text LcId="1031">Schreib-/Lesezugriff</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>struct&#91;0&#93;.name</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarStructName</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Name of the structure</Text>
+				<Text LcId="1031">Name der Struktur</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>struct&#91;0&#93;.element&#91;0&#93;.name</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementName</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Name of the element of structure</Text>
+				<Text LcId="1031">Name des Elements der Struktur</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>struct&#91;0&#93;.element&#91;0&#93;.type</Name>
+			<Nr>P-VE-VAR-00000</Nr>
+			<Help/>
+			<Type>ExtVarElementType</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Type of variable</Text>
+				<Text LcId="1031">Datentyp der Variable</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">100</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<Type> </Type>
+			<DisplayName>
+				<Text LcId="1033">ADS access</Text>
+				<Text LcId="1031">ADS-Zugriff</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>name_rd_global_array</Name>
+			<Nr>P-VE-VAR-00021</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Read in case of global array</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Lesen bei globalen Feld</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">cnc_ve_%s_rd&#91;%s&#93;</Text>
+				<Text LcId="1031">cnc_ve_%s_rd&#91;%s&#93;</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_wr_global_array</Name>
+			<Nr>P-VE-VAR-00022</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Write in case of global array</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Schreiben bei globalen Feld</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">cnc_ve_%s_wr&#91;%s&#93;</Text>
+				<Text LcId="1031">cnc_ve_%s_wr&#91;%s&#93;</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_rd_channel_array</Name>
+			<Nr>P-VE-VAR-00023</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Read in case of channel specific array</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Lesen bei kanalspezifischen Feld</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">mc_ve_%s_rd&#91;%s&#93;</Text>
+				<Text LcId="1031">mc_ve_%s_rd&#91;%s&#93;</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_wr_channel_array</Name>
+			<Nr>P-VE-VAR-00024</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Write in case of channel specific array</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Schreiben bei  kanalspezifischen Feld</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">mc_ve_%s_wr&#91;%s&#93;</Text>
+				<Text LcId="1031">mc_ve_%s_wr&#91;%s&#93;</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_rd_global</Name>
+			<Nr>P-VE-VAR-00025</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Read in case of global variables</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Lesen bei globalen Variablen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">cnc_ve_%s_rd</Text>
+				<Text LcId="1031">cnc_ve_%s_rd</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_wr_global</Name>
+			<Nr>P-VE-VAR-00026</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Write in case of global variables</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekt Schreiben bei globalen Variablen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">cnc_ve_%s_wr</Text>
+				<Text LcId="1031">cnc_ve_%s_wr</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_rd_channel</Name>
+			<Nr>P-VE-VAR-00027</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Read in case of channel-specific variables</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Lesen bei kanalspezifischen Variablen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">mc_ve_%s_rd</Text>
+				<Text LcId="1031">mc_ve_%s_rd</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+		<Para>
+			<Name>name_wr_channel</Name>
+			<Nr>P-VE-VAR-00028</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of communication object Write in case of channel-specific variables</Text>
+				<Text LcId="1031">Name des Kommunikationsobjekts Schreiben bei kanalspezifischen Variablen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">mc_ve_%s_wr</Text>
+				<Text LcId="1031">mc_ve_%s_wr</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<MaxNumber>
+				<ArrayIndex No="0">0</ArrayIndex>
+			</MaxNumber>
+			<SystemChange>0</SystemChange>
+		</Para>
+	</ParaList>
+</TcParaDesc>

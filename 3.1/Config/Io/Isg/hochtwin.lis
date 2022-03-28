@@ -1,0 +1,91 @@
+# *****************************************
+#
+#TC_STARTUP_DESC: TwinCAT CNC-Configuration
+#
+# *****************************************
+#
+#fb_storage_size[0]                                   0x200000                                    # Buffer for Forward / Backward interpolation in byte
+error_protocol_mode                                   LOG | PRINT | REPORT | TC3_EVENT_LOGGER 
+no_error_message_at_reset                             1                                           # no error message at reset
+#
+# -------------------------------------------------------
+# NC-program path
+# -------------------------------------------------------
+# path[ <channelNr> ].prg[ <Index> ]
+#
+# prg        -> Program path
+# log_nr     -> logical program path number
+# typ        -> Programmpfadtyp ( 0x01 Main program path          )
+#                               ( 0x02 Sub program path           )
+#                               ( 0x03 Main- and sub program path )
+#
+# prioritaet -> priority of the program path, 
+#               (if there are multible program paths with the same type)
+#
+# additional program path, customer
+pfad[0].prg[0]                                        sub
+pfad[0].log_nr[0]                                     1              # logical path number
+pfad[0].typ[0]                                        0x07           # main- and subprogram path, MSG SAVE
+pfad[0].prioritaet[0]                                 1              # priority
+#
+# program path for sub programs
+pfad[0].prg[1]                                        cycles
+pfad[0].log_nr[1]                                     2              # logical path number
+pfad[0].typ[1]                                        0x03           # main- and subprogram path
+pfad[0].prioritaet[1]                                 2              # priority
+#
+# program path for cycles
+pfad[0].prg[2]                                        customer
+pfad[0].log_nr[2]                                     3              # logical path number
+pfad[0].typ[2]                                        0x03           # main- and subprogram path
+pfad[0].prioritaet[2]                                 3              # priority
+#
+# ------------------------------------------------------------------------------------------------------
+# Do not change data below this line!!!
+# Daten unterhalb dieser Zeile nicht aendern, teilweise werden durch
+# den Systemmanager Aenderungen automatisch durchgefuehrt!!!
+# ------------------------------------------------------------------------------------------------------
+#
+konfiguration                                         EIN_KANAL_KONFIGURIERUNG
+#
+kanal_anzahl                                          1
+ext_var_max                                           100
+#
+# ----------------------------------------
+# Lists for configuration data
+# ----------------------------------------
+listen                                                ASCII
+#
+default_sda_mds                                       default_sda.lis
+default_achs_mds                                      default.mds
+#
+sda_mds[0]                                            sda_mds1.lis
+werkz_data[0]                                         werkz_d1.lis
+nullp_data[0]                                         nullp_d1.lis
+pzv_data[0]                                           pzv_d1.lis
+ve_var[0]                                             ext_var1.lis
+hand_mds                                              hand_mds.lis
+#
+hmi[0].objects                                        default
+channel[0].objects                                    default
+konf_path                                             .
+#
+zahl_mds                                              11
+achs_mds[0]                                           achsmds1.lis
+achs_mds[1]                                           achsmds2.lis
+achs_mds[2]                                           achsmds3.lis
+achs_mds[3]                                           achsmds4.lis
+achs_mds[4]                                           achsmds5.lis
+achs_mds[5]                                           achsmds6.lis
+achs_mds[6]                                           achsmd11.lis
+achs_mds[7]                                           achsmd17.lis
+achs_mds[8]                                           achsmd22.lis
+achs_mds[9]                                           achsmd27.lis
+achs_mds[10]                                          achsmd30.lis
+#
+zahl_kw                                               1
+achs_kw[0]                                            achskw1.lis
+achs_kw_log_ax_nr[0]                                  1
+#
+Ende
+

@@ -1,0 +1,326 @@
+﻿TOPIC
+    PowerShell TwinCAT XAE Management Console (TcXaeMgmt)
+
+SHORT DESCRIPTION
+    Describes the Powershell TwinCAT Management Console (TcXaeMgmt) module and 
+    how to use the contained cmdlets and functions.
+
+LONG DESCRIPTION
+    Powershell TwinCAT Management Console is a PowerShell module that provides a
+    number of useful cmdlets for TwinCAT System Management and for communicating
+    with ADS devices with the ADS protocol.
+    This includes TwinCAT Route Management as finding routes (find targets, broadcast search),
+    establishing and removing route connections (Add-AdsRoute, Remove-AdsRoute) and the 
+    test of registered routes (Test-AdsRoute) or communication (Get-AdsState).
+    Furthermore Ads Sessions can be established for further use (New-TcSession), Symbol information
+    can be browsed (Get-TcSymbol, Get-TcDataType) and data read/write from/to to ADS Devices
+    (Read-TcValue, Write-TcValue).
+    Uploading and Downloading files to or from the TwinCAT Target systems is an additional feature
+    (Copy-AdsFile).
+        
+POWERSHELL COMPATIBILITY
+    Actually, the TwinCAT Management Console is written for and works with Powershell
+    4.0.
+    
+PREFERENCE VARIABLES
+
+CMDLETS
+    To see what cmdlets are provided by the TcXaeMgmt Module, execute the command:
+    Get-Command -Module TcXaeMgmt -CommandType Cmdlet
+    The current TcXaeMgmt cmdlets are listed below:
+
+    Add-AdsRoute
+        Cmdlet for adding TwinCAT Routes.
+
+    Close-TcSession
+        Closes the specified session object.
+
+    Copy-AdsFile
+        Uploads / Downloads files from/to TwinCAT target.
+
+    Get-AdsRoute
+        List routes on a TwinCAT System / Broadcast search.
+
+    Get-AdsState
+        Gets the Ads State of a TwinCAT Target.
+
+    Get-TcDataType
+        Get the DataTypes from a TwinCAT target system / Device.
+
+    Get-TcSession
+        List the currently established Sessions.
+
+    Get-TcSymbol
+        Get the symbols from a TwinCAT target system / Device.
+
+    Get-TcTargetInfo
+        Get TwinCAT Device Target information.
+
+    Get-TcVersion
+        Get the TwinCAT Version of a target system.
+
+    New-TcSession
+        Create a new session to a TwinCAT Target.
+
+    Read-TcValue
+        Reads values from TwinCAT devices.
+
+    Remove-AdsRoute
+        Remove an ADS Route.
+
+    Set-AdsState
+        Set the ADS State of a TwinCAT Target.
+
+    Test-AdsRoute
+        Test the specified route connection.
+
+    Write-TcValue
+        Write values to TwinCAT devices.
+
+
+FIRSTSTEPS
+    # Getting Route
+    >PS $route = get-adsroute TC3TEST*
+    >PS $route
+
+    Name            NetId             Address       Sub Version RTSystem
+    ----            -----             -------       --- ------- --------
+    TC3TESTA1-CP67X 172.17.62.105.1.1 172.17.62.105     0.0     Unknown
+
+    #Create Session
+    PS> $session = New-TcSession -Route $route -Port 851
+    PS> $session
+
+    ID Address               IsConnected EstablishedAt
+    -- -------               ----------- -------------
+    1  172.17.62.105.1.1:851 True        12/12/2016 12:22:02 PM
+
+    # Read Ads Value (Struct)
+    > $v1 = Read-TcValue -SessionId 1 -Path "GVL.vgStruct"
+    > $v1
+
+    vBool   : True
+    vByte   : 123
+    vWord   : 12345
+    vDWord  : 12345678
+    vSInt   : -121
+    vUSInt  : 212
+    vInt    : -12121
+    vUInt   : 21212
+    vDInt   : -1212121
+    vUDInt  : 2121212
+    vReal   : 123,456
+    vLReal  : 1234567890,12346
+    vString : QWERTZUIOPÜASDFGHJKLÖÄYXCVBNM;:_
+    vTime   : 01:02:03.0040000
+    vTod    : 23:45:06.7890000
+    vDate   : 17.11.2005 00:00:00
+    vDT     : 17.11.2005 12:34:56
+    vAlias  : 8
+    vEnum   : 8
+    vRange  : 7
+    PSValue : ...
+
+    # Read Ads Value (Boolean)
+    > $v2 = Read-TcValue -SessionId 1 -Path "Main.bChange"
+    > $v2
+    False
+
+    # Read Ads Value (Array of Strings)
+    > $v3 = Read-TcValue -SessionId 1 -path "GVL.vgaString"
+
+    Dimensions                     Elements                                                             PSValue
+    ----------                     --------                                                             -------
+    {TwinCAT.TypeSystem.Dimension} {QWERTZUIOPÜASDFGHJKLÖÄYXCVBNM;:_, _:;MNBVCXYÄÖLKJHGFDSAÜPOIUZTREWQ} ...
+
+    # Read Array Of Structs
+    > $v4 = Read-TcValue -SessionId 1 -path "GVL.vgastruct"
+
+
+    Dimensions                     Elements
+    ----------                     --------
+    {TwinCAT.TypeSystem.Dimension} {@{vBool=True; vByte=123; vWord=12345; vDWord=12345678; vSInt=-121; vUSInt=212; vInt=-12121; vUInt=21212; vDInt=-1212121; vUD...
+
+    #Dump Array Elements
+    > $v4.Dimensions.ElementCount
+    2
+
+    > $v4.Elements
+
+    vBool   : True
+    vByte   : 123
+    vWord   : 12345
+    vDWord  : 12345678
+    vSInt   : -121
+    vUSInt  : 212
+    vInt    : -12121
+    vUInt   : 21212
+    vDInt   : -1212121
+    vUDInt  : 2121212
+    vReal   : 123,456
+    vLReal  : 1234567890,12346
+    vString : QWERTZUIOPÜASDFGHJKLÖÄYXCVBNM;:_
+    vTime   : 01:02:03.0040000
+    vTod    : 23:45:06.7890000
+    vDate   : 17.11.2005 00:00:00
+    vDT     : 17.11.2005 12:34:56
+    vAlias  : 8
+    vEnum   : 8
+    vRange  : 7
+    PSValue : ...
+
+    vBool   : False
+    vByte   : 234
+    vWord   : 23456
+    vDWord  : 23456789
+    vSInt   : 121
+    vUSInt  : 131
+    vInt    : 12121
+    vUInt   : 13131
+    vDInt   : 1212121
+    vUDInt  : 1313131
+    vReal   : 456,321
+    vLReal  : 987654321,123457
+    vString : _:;MNBVCXYÄÖLKJHGFDSAÜPOIUZTREWQ
+    vTime   : 11:22:33.0440000
+    vTod    : 11:22:33.4440000
+    vDate   : 22.01.1999 00:00:00
+    vDT     : 22.01.1999 11:22:33
+    vAlias  : 9
+    vEnum   : 9
+    vRange  : -5
+    PSValue : ...
+
+    # Browse Data Types (Query by Category)
+    > $session | Get-TcDataType | where Category -eq "Array" }
+
+    Name                      Size     Category   Comment          ElementType      Dimensions       Members
+    ----                      ----     --------   -------          -----------      ----------       -------
+    ARRAY [-1..1] OF INT      6        Array                       INT              {TwinCAT.Type...
+    ARRAY [-10..-8] OF BOOL   3        Array                       BOOL             {TwinCAT.Type...
+    ARRAY [0..1] OF A_Alias   4        Array                       A_Alias          {TwinCAT.Type...
+    ....
+
+    # Browse DataTypes by name
+    > $session | Get-TcDataType -name "Array*"
+
+    # Browse all Symbols recursively
+    > $session | Get-TcSymbol -recurse
+    ... returns all symbols
+
+    # Browse Symbols recursivly by Symbol Path (Here specific array index 'TaskInfo[1]'(
+    > $session | Get-TcSymbol -recurse -path "*TaskInfo``[1``]*","*.ProjectName"
+
+    InstanceName            DataType              Size InstancePath                                                   Comment
+    ------------            --------              ---- ------------                                                   -------
+    ProjectName             STRING(63)            64   TwinCAT_SystemInfoVarList._AppInfo.ProjectName
+    _TaskInfo[1]            PLC.PlcTaskSystemInfo 128  TwinCAT_SystemInfoVarList._TaskInfo[1]
+    ObjId                   OTCID                 4    TwinCAT_SystemInfoVarList._TaskInfo[1].ObjId
+    CycleTime               UDINT                 4    TwinCAT_SystemInfoVarList._TaskInfo[1].CycleTime
+    Priority                UINT                  2    TwinCAT_SystemInfoVarList._TaskInfo[1].Priority
+    AdsPort                 UINT                  2    TwinCAT_SystemInfoVarList._TaskInfo[1].AdsPort
+    CycleCount              UDINT                 4    TwinCAT_SystemInfoVarList._TaskInfo[1].CycleCount
+    DcTaskTime              LINT                  8    TwinCAT_SystemInfoVarList._TaskInfo[1].DcTaskTime
+    LastExecTime            UDINT                 4    TwinCAT_SystemInfoVarList._TaskInfo[1].LastExecTime
+    FirstCycle              BOOL                  1    TwinCAT_SystemInfoVarList._TaskInfo[1].FirstCycle
+    CycleTimeExceeded       BOOL                  1    TwinCAT_SystemInfoVarList._TaskInfo[1].CycleTimeExceeded
+    InCallAfterOutputUpdate BOOL                  1    TwinCAT_SystemInfoVarList._TaskInfo[1].InCallAfterOutputUpdate
+    RTViolation             BOOL                  1    TwinCAT_SystemInfoVarList._TaskInfo[1].RTViolation
+    TaskName                STRING(63)            64   TwinCAT_SystemInfoVarList._TaskInfo[1].TaskName
+
+    # Browse only Symbols ending with path *.ProjectName
+    >$project = Get-TcSymbol -Session $session -recurse -path "*.ProjectName"
+
+    InstanceName DataType   Size InstancePath                                   Comment
+    ------------ --------   ---- ------------                                   -------
+    ProjectName  STRING(63) 64   TwinCAT_SystemInfoVarList._AppInfo.ProjectName
+
+    # Ads Read ProjectName
+    >$project | Read-TcValue -Session $session
+    ADS_DynSymbols
+
+    # Ads Write ProjectName
+    >$project | Write-TcValue -Session $session -Value "NewProjectName"
+    >$project | Read-TcValue -Session $session
+    NewProjectName
+
+    # ReadWrite by Symbol Path
+    >Read-TcValue -SessionId 1 -Path "Main.bChange"
+    false
+    >Write-TcValue -SessionId 1 -Symbol "Main.bChange" -Value True
+    >Read-TcValue -SessionId 1 -Path "GVL.vgBool"
+    >Write-TcValue -SessionId 1 -Path "GVL.vgBool" -value $true
+
+    # ReadWrite by Piping
+    > $projectNameSymbol = $session | Get-TcSymbol -Recurse -path "*ProjectName"
+    > $projectNameSymbol | Read-TcValue -SessionId 1
+    > $projectNameSymbol | Write-TcValue -SessionId 1 -Value "NewProjectName"
+    > $projectNameSymbol | Read-TcValue -SessionId 1
+ 
+    # Get Target Information
+    > get-adsroute | Get-TcTargetInfo
+
+    Target          Version      Level OS   Image Device CPUArch
+    ------          -------      ----- --   ----- ------ -------
+    TC3TESTA1-CP67X 3.1.4021.131 CP    Win7              IntelX86
+
+    > get-adsroute | Get-TcVersion
+
+    Major  Minor  Build  Revision
+    -----  -----  -----  --------
+    3      1      4021   131
+        
+PROVIDERS
+    The TcXaeMgmt module includes the AdsSymbolProvider, which binds the target
+	device symbolic information to a PSDrive. To register a symbol server as
+	PSDrive type (here the Target Route 'TC3TESTA1-CP67X' with AmsPort: 851)
+
+	> New-PSDrive -Name AdsSymbols -PSProvider AdsSymbolProvider -Address TC3TESTA1-CP67X -Port 851 -Root ''
+	> cd AdsSymbols:
+	> dir
+		
+	get-help about_providers
+        
+FUNCTIONS
+    To see what functions are provided by TcXaeMgmt, execute the command:
+    Get-Command -Module TcXaeMgmt -CommandType Function
+    The current TcXaeMgmt functions are listed below:
+
+    (Add-Route
+        Adding a route to the specified TwinCAT System)
+    
+        
+TCXAEMGMT ALIASES
+    To see what aliases get created by TcXaeMgmt, execute the command:
+    Get-Command -Module TcXaeMgmt -CommandType Alias
+    The current TcXaeMgmt defined aliases are listed below:
+
+    (fhex          : alias for Format-Hex cmdlet)
+
+MISCELLANOUS FEATURES
+
+FEEDBACK
+    Please submit any feedback, including defects and enhancement requests, 
+    to 
+
+        support@beckhoff.com
+
+    We are also interested in suggestions you may have for cmdlets.  Over
+    time, we hope to be able to add some more features.
+
+SEE ALSO
+    For more information, most of the cmdlets have help associated with 
+    them e.g.:
+    
+    PS> Get-Help Add-AdsRoute -full
+    
+    The definitive information on a cmdlet's parameters can be obtained
+    by executing:
+    
+    PS> Get-Command Add-AdsRoute -syntax
+    
+    or more tersely:
+    
+    PS> gcm Add-AdsRoute -syn
+    
+    about_providers

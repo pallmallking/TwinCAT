@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TcParaDesc.xsd">
+    <StringList>
+        <String>
+            <Id>1001</Id>
+            <Text LcId="1031">Nr</Text>
+            <Text LcId="1033">No</Text>
+        </String>
+        <String>
+            <Id>1002</Id>
+            <Text LcId="1031">Kennung</Text>
+            <Text LcId="1033">Identifier</Text>
+        </String>
+        <String>
+            <Id>1003</Id>
+            <Text LcId="1031">Param-Nr</Text>
+            <Text LcId="1033">Param-Nr</Text>
+        </String>
+        <String>
+            <Id>1004</Id>
+            <Text LcId="1031">Hilfe</Text>
+            <Text LcId="1033">Help</Text>
+        </String>
+        <String>
+            <Id>1005</Id>
+            <Text LcId="1031">Typ</Text>
+            <Text LcId="1033">Type</Text>
+        </String>
+        <String>
+            <Id>1006</Id>
+            <Text LcId="1031">Parameter</Text>
+            <Text LcId="1033">Parameter</Text>
+        </String>
+        <String>
+            <Id>1007</Id>
+            <Text LcId="1031">Wert</Text>
+            <Text LcId="1033">Value</Text>
+        </String>
+        <String>
+            <Id>1008</Id>
+            <Text LcId="1031">Einheit</Text>
+            <Text LcId="1033">Unit</Text>
+        </String>
+        <String>
+            <Id>1009</Id>
+            <Text LcId="1031">Kommentar</Text>
+            <Text LcId="1033">Comment</Text>
+        </String>
+        <String>
+            <Id>1010</Id>
+            <Text LcId="1031">-</Text>
+            <Text LcId="1033">-</Text>
+        </String>
+    </StringList>
+    <UnitList>
+        <Unit>
+            <UnitRef>Position</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Speed</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+        </Unit>
+    </UnitList>
+    <UserGroupList>
+        <UserGroup>Advanced</UserGroup>
+        <UserGroup>Standard</UserGroup>
+        <UserGroup>Basic</UserGroup>
+        <UserGroup>No access</UserGroup>
+    </UserGroupList>
+    <DataTypes>
+        <DataType>
+            <Name>Data1</Name>
+            <Type>float</Type>
+        </DataType>
+        <DataType>
+            <Name>Data2</Name>
+            <Type>double</Type>
+        </DataType>
+        <DataType>
+            <Name>BOOLEAN</Name>
+            <Type>CComboBox</Type>
+            <Comment>yes, no - type</Comment>
+            <Property>
+                <Name>0</Name>
+                <Value>0</Value>
+            </Property>
+            <Property>
+                <Name>1</Name>
+                <Value>1</Value>
+            </Property>
+        </DataType>
+        <DataType>
+            <Name>BOOLEAN2</Name>
+            <Type>CComboBox</Type>
+            <Comment>yes, no - type</Comment>
+            <ArrayInfo>
+                <LBound>0</LBound>
+                <Elements>98</Elements>
+            </ArrayInfo>
+            <ArrayInfo>
+                <LBound>1</LBound>
+                <Elements>3</Elements>
+            </ArrayInfo>
+            <Property>
+                <Name>0</Name>
+                <Value>0</Value>
+            </Property>
+            <Property>
+                <Name>1</Name>
+                <Value>1</Value>
+            </Property>
+        </DataType>
+        <DataType>
+            <Name>ZeroParaType</Name>
+            <Type>CEdit</Type>
+            <ArrayInfo>
+                <LBound>0</LBound>
+                <Elements>98</Elements>
+            </ArrayInfo>
+            <ArrayInfo>
+                <LBound>1</LBound>
+                <Elements>3</Elements>
+            </ArrayInfo>
+        </DataType>
+        <DataType>
+            <Name>EditDialogTypes</Name>
+            <Type>CEditDialog</Type>
+            <Comment>Dialog for selecting variable parameter types</Comment>
+            <SubPara>
+                <Name>np_grp[%d].achse[%d].versch</Name>
+                <Nr>P-ZERO-00003</Nr>
+                <Type>SGN32</Type>
+                <Default-Value>0</Default-Value>
+                <DisplayName>
+                    <Text LcId="1033">Axis X, Zero-offset</Text>
+                    <Text LcId="1031">Achse X, Nullpunktverschiebung</Text>
+                </DisplayName>
+            </SubPara>
+            <SubPara>
+                <Name>np_grp[%d].achse[%d].inaktiv</Name>
+                <Nr>P-ZERO-00004</Nr>
+                <Type>BOOLEAN</Type>
+                <Default-Value>0</Default-Value>
+                <DisplayName>
+                    <Text LcId="1033">Axis X, Axis specific deselection</Text>
+                    <Text LcId="1031">Achse X, Achsspezifische Deaktivierung</Text>
+                </DisplayName>
+            </SubPara>
+        </DataType>
+    </DataTypes>
+    <ParaList>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">General parameter</Text>
+                <Text LcId="1031">Allgemeine Parameter</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>default_index</Name>
+            <Nr>P-ZERO-00002</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Default setting of zero offsets</Text>
+                <Text LcId="1031">Defaulteinstellung von Nullpunktverschiebungen</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">This parameter defines which zero offsets should be automatically active after the program start.</Text>
+                <Text LcId="1031">Über diesen Parameter kann bestimmt werden, welche Nullpunktverschiebung (Index) nach Programmstart automatisch aktiv sein soll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>g53_verfuegbar</Name>
+            <Nr>P-ZERO-00001</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Deselection of zero offsets</Text>
+                <Text LcId="1031">Abwahl von Nullpunktverschiebungen</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter allows the use of the G53-Dataset in order to define an additional offset dataset.</Text>
+                <Text LcId="1031">Der Parameter ermöglicht die Verwendung des G53-Datensatzes für die Definition eines zusätzlichen Verschiebungsdatensatzes.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G53</Text>
+                <Text LcId="1031">Verschiebungen G53</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G54</Text>
+                <Text LcId="1031">Verschiebungen G54</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G55</Text>
+                <Text LcId="1031">Verschiebungen G55</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G56</Text>
+                <Text LcId="1031">Verschiebungen G56</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G57</Text>
+                <Text LcId="1031">Verschiebungen G57</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G58</Text>
+                <Text LcId="1031">Verschiebungen G58</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G59</Text>
+                <Text LcId="1031">Verschiebungen G59</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets G159</Text>
+                <Text LcId="1031">Verschiebungen G159</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Offsets --- test ---</Text>
+                <Text LcId="1031">Verschiebungen  --- test ---</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>np_grp[0].achse[0].inaktiv</Name>
+            <Nr>P-ZERO-00004</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Axis spezific deselection</Text>
+                <Text LcId="1031">Achsspezifische Deaktivierung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">
+                </Text>
+                <Text LcId="1031">
+                </Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">97</ArrayIndex>
+                <ArrayIndex No="1">32</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>np_grp[0].achse[0].versch</Name>
+            <Nr>P-ZERO-00003</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Zero-offset</Text>
+                <Text LcId="1031">Nullpunktverschiebung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">0.1 &amp;#181;m oder 10-E4 &amp;#176;</Text>
+                <Text LcId="1031">0.1 &amp;#181;m oder 10-E4 &amp;#176;</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">
+                </Text>
+                <Text LcId="1031">
+                </Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">97</ArrayIndex>
+                <ArrayIndex No="1">32</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+    </ParaList>
+</TcParaDesc>

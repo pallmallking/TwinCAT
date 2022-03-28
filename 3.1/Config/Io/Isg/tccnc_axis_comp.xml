@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TcParaDesc.xsd">
+    <StringList>
+        <String>
+            <Id>1001</Id>
+            <Text LcId="1031">Nr</Text>
+            <Text LcId="1033">No</Text>
+        </String>
+        <String>
+            <Id>1002</Id>
+            <Text LcId="1031">Kennung</Text>
+            <Text LcId="1033">Identifier</Text>
+        </String>
+        <String>
+            <Id>1003</Id>
+            <Text LcId="1031">Param-Nr</Text>
+            <Text LcId="1033">Param-Nr</Text>
+        </String>
+        <String>
+            <Id>1004</Id>
+            <Text LcId="1031">Hilfe</Text>
+            <Text LcId="1033">Help</Text>
+        </String>
+        <String>
+            <Id>1005</Id>
+            <Text LcId="1031">Typ</Text>
+            <Text LcId="1033">Type</Text>
+        </String>
+        <String>
+            <Id>1006</Id>
+            <Text LcId="1031">Parameter</Text>
+            <Text LcId="1033">Parameter</Text>
+        </String>
+        <String>
+            <Id>1007</Id>
+            <Text LcId="1031">Wert</Text>
+            <Text LcId="1033">Value</Text>
+        </String>
+        <String>
+            <Id>1008</Id>
+            <Text LcId="1031">Einheit</Text>
+            <Text LcId="1033">Unit</Text>
+        </String>
+        <String>
+            <Id>1009</Id>
+            <Text LcId="1031">Kommentar</Text>
+            <Text LcId="1033">Comment</Text>
+        </String>
+        <String>
+            <Id>1010</Id>
+            <Text LcId="1031">-</Text>
+            <Text LcId="1033">-</Text>
+        </String>
+    </StringList>
+    <UnitList>
+        <Unit>
+            <UnitRef>Position</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Speed</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>m/min</Text>
+                <Factor>16666.66666666666</Factor>
+                <Format>%.2lf</Format>
+                <!--1 µm/s-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°/s</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--10^-3°/s-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Acceleration</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>m/s²</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--1 mm/s²-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>m/s²</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--1 mm/s²-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°/s²</Text>
+                <Factor>1</Factor>
+                <Format>%.0lf</Format>
+                <!--1 °/s²-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°/s²</Text>
+                <Factor>1</Factor>
+                <Format>%.0lf</Format>
+                <!--1 °/s²-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Time</UnitRef>
+            <Unit LcId="1033">
+                <Text>ms</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--µs-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>ms</Text>
+                <Factor>1000</Factor>
+                <Format>%.2lf</Format>
+                <!--µs-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>GainKv</UnitRef>
+            <Unit LcId="1033">
+                <Text>1/s</Text>
+                <Factor>100</Factor>
+                <Format>%.2lf</Format>
+                <!--0.01 * 1/s-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>1/s</Text>
+                <Factor>100</Factor>
+                <Format>%.2lf</Format>
+                <!--0.01 * 1/s-->
+            </Unit>
+        </Unit>
+        <Unit>
+            <UnitRef>Percent</UnitRef>
+            <Unit LcId="1033">
+                <Text>%</Text>
+                <Factor>10</Factor>
+                <Format>%.1lf</Format>
+                <!--0,1%-->
+            </Unit>
+            <Unit LcId="1031">
+                <Text>%</Text>
+                <Factor>10</Factor>
+                <Format>%.1lf</Format>
+                <!--0,1%-->
+            </Unit>
+        </Unit>
+    </UnitList>
+    <UserGroupList>
+        <UserGroup>Basic</UserGroup>
+        <UserGroup>Standard</UserGroup>
+        <UserGroup>Advanced</UserGroup>
+    </UserGroupList>
+    <DataTypes>
+        <DataType>
+            <Name>Data1</Name>
+            <Type>float</Type>
+        </DataType>
+        <DataType>
+            <Name>Data2</Name>
+            <Type>double</Type>
+        </DataType>
+    </DataTypes>
+    <ParaList>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">General parameter</Text>
+                <Text LcId="1031">Allgemeine Parameter</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>kopf.achs_nr</Name>
+            <Nr>P-COMP-00001</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number</Text>
+                <Text LcId="1031">Logische Achsnummer</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The logical axis number is a system-wide distinctive, identification characteristic for every axis. The assignment of the compensation value list to the corresponding logical axis is done with this parameter.</Text>
+                <Text LcId="1031">Die logische Achsnummer ist eine systemweit eindeutige Identifikationskennung für jede Achse. Mit dem Parameter erfolgt die Zuordnung der Korrekturwertliste zur entsprechenden logischen Achse.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kopf.log_achs_name</Name>
+            <Nr>P-COMP-00002</Nr>
+            <Help />
+            <Type>STRING</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Axis name</Text>
+                <Text LcId="1031">Achsname</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">This string is the axis name of the axis. Is used only for diagnostic purposes.</Text>
+                <Text LcId="1031">Der Achsname der Achse wird nur für Diagnosezwecke verwendet und hat ansonsten keinerlei Bedeutung.</Text>
+            </Comment>
+            <Format>%s</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Axis error compensation</Text>
+                <Text LcId="1031">Achsfehlerkompensation</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.kw_startpos</Name>
+            <Nr>P-COMP-000019</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of compensation values</Text>
+                <Text LcId="1031">Startposition der Korrekturwerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position of the compensation table.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Achse, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.kw_nr_max</Name>
+            <Nr>P-COMP-000020</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of compensation values</Text>
+                <Text LcId="1031">Anzahl der Korrekturwerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the number of entries in the compensation table is defined.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Einträge in der Korrekturtabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.interval</Name>
+            <Nr>P-COMP-000018</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between interpolation points</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the spacing between interpolation points of the compensation table if using equidistant interpolation points is defined. If this parameter is = 0, the position of each interpolation point must be specified separately.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der Abstand der Stützpunkte der Korrekturtabelle bei Verwendung von äquidistanten Stützpunkten definiert. Ist dieser Parameter = 0 so muss die Position jedes Stützpunktes separat angegeben werden.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.bilateral</Name>
+            <Nr>P-COMP-000021</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Mode of compensation</Text>
+                <Text LcId="1031">Arbeitsweise der Kompensation</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines, if the compensation effects unilateral or bilateral.</Text>
+                <Text LcId="1031">Der Parameter definiert, ob die Kompensation einseitig oder doppelseitig wirken soll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.modulo</Name>
+            <Nr>P-COMP-000022</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation of a modulo axis</Text>
+                <Text LcId="1031">Kompensation einer Moduloachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the compensation table for a modulo axis is defined. Here a 'modulo transition” also occurs in the compensation table at the modulo transition of the axis position.The following special aspects must be noted:The position values of the first and last entry in the compensation list must be the same.The number of compensation values is equal to the number of entries in the compensation value table here as well.</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Korrekturtabelle für eine Modulo-Achse konfiguriert. Hierbei findet beim Moduloübergang der Achsposition auch ein 'Moduloübergang' in der Korrekturtabelle statt.Dabei sind folgende Besonderheiten zu beachten:Die Positionswerte des ersten und des letzten Eintrags in der Korrekturliste müssen gleich sein.Die Anzahl der Korrekturwerte ist auch hier gleich der Anzahl der Einträge in der Korrekturwerttabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.unit</Name>
+            <Nr>P-COMP-000017</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of the length/position entries </Text>
+                <Text LcId="1031">Einheit der Längenangaben</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of the length/ position entries of the compensation values.</Text>
+                <Text LcId="1031">Der Parameter bestimmt, in welcher Einheit die Längen-/ Positionsangaben zu verwenden sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].pos</Name>
+            <Nr>P-COMP-000023</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation value in positive direction</Text>
+                <Text LcId="1031">Korrekturwert in positiver Richtung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines a compensation value in case of movement in positive direction at interpolation point 'i'.</Text>
+                <Text LcId="1031">Der Parameter definiert einen Korrekturwert bei Bewegung in positiver Richtung am Stützpunkt 'i'.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].neg</Name>
+            <Nr>P-COMP-000024</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation value in negative direction</Text>
+                <Text LcId="1031">Korrekturwert in negativer Richtung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or incr. R,S: 0.0001° or incr.</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines a compensation value in case of movement in negative direction at interpolation point 'i'.</Text>
+                <Text LcId="1031">Der Parameter definiert einen Korrekturwert bei Bewegung in negativer Richtung am Stützpunkt 'i'.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].setpoint</Name>
+            <Nr>P-COMP-000025</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Interpolation points of the axis</Text>
+                <Text LcId="1031">Stützpunkte der Achse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the interpolation points of the axis on which the axis has to be corrected.</Text>
+                <Text LcId="1031">Mit dem Parameter werden die Stützpunkte der Achse definiert, bei denen die Achse korrigiert werden muß.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Cross compensation</Text>
+                <Text LcId="1031">Kreuzkompensation</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.last_index</Name>
+            <Nr>P-COMP-00004</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Last index of compensation table</Text>
+                <Text LcId="1031">Letzter Index der Korrekturwerttabelle</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the last valid index in the correction table of the master axis (maximum 1000 values) is determined. The table always starts with index 0.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der letzte gültige Index in der Tabelle der Masterachse (Maximal 1000 Werte) bestimmt. Die Tabelle beginnt immer mit Index 0</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.unit</Name>
+            <Nr>P-COMP-00003</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of the position entries</Text>
+                <Text LcId="1031">Einheit der Längenangaben</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">-</Text>
+                <Text LcId="1033">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of the position entries of the compensation values.</Text>
+                <Text LcId="1031">Der Parameter bestimmt, in welcher Einheit die Längenangaben der Korrekturwerte zu verwenden sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.table[0].correction</Name>
+            <Nr>P-COMP-00007</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation values for the slave axis</Text>
+                <Text LcId="1031">Korrekturwerte für die Slaveachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the relative compensation value for the slave axis at interpolation point 'i'.</Text>
+                <Text LcId="1031">Mit dem Parameter werden die relativen Korrekturwerte für die Slaveachse an den Stützpunkten 'i' definiert.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.table[0].setpoint</Name>
+            <Nr>P-COMP-000006</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Interpolation point of the master axis</Text>
+                <Text LcId="1031">Stützpunkte der Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the absolute command positions of the master axis on which the slave axis has to be corrected.</Text>
+                <Text LcId="1031">Mit dem Parameter werden die Stützpunkte der Masterachse definiert, bei denen die Slaveachse korrigiert werden muß.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table[0].out</Name>
+            <Nr>P-COMP-000047</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Measured friction (motor current) - output variable</Text>
+                <Text LcId="1031">Gemessene Reibung (Motorstrom) - Ausgabegröße</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">*</Text>
+                <Text LcId="1031">*</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the current that is to be additionally output at the additive current interface.</Text>
+                <Text LcId="1031">Der Parameter definiert den Strom, der an der additiven Stromschnittstelle zusätzlich ausgegeben werden soll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">20</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table[0].in</Name>
+            <Nr>P-COMP-000046</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Speed - input variable</Text>
+                <Text LcId="1031">Geschwindigkeit - Eingangsgröße</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">Increments / cycle</Text>
+                <Text LcId="1031">Inkremente / Takt</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter definies the speeds for which the motor currents assigned in P-COMP-00047 are to be output through the additive current interface. Must be entered in ascending order.</Text>
+                <Text LcId="1031">Der Parameter definiert die Geschwindigkeiten, für die die in P-COMP-00047 vorgegebenen zusätzlichen Motorströme auf der additiven Stromschnittstelle ausgegeben werden sollen. Die Werte müssen aufsteigend eingegeben werden!</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">20</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.scaling_factor</Name>
+            <Nr>P-COMP-000045</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>1000</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Scaling factor for compensation values</Text>
+                <Text LcId="1031">Skalierungsfaktor für die Kompensationswerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">0.1%</Text>
+                <Text LcId="1031">0.1%</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the scaling factor for the entries in the compensation list</Text>
+                <Text LcId="1031">Der Parameter definiert die Skalierung aller Kompensationswerte der Liste.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.reversal_lookahead</Name>
+            <Nr>P-COMP-000044</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Reversal look-ahead</Text>
+                <Text LcId="1031">Lookahead der Umkehr</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">Cycles</Text>
+                <Text LcId="1031">Takte</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the number of cycles during which the motor current is dissipated before a motion reversal.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Takte, über die vor einer Bewegungsumkehr der Motorstrom abgebaut wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.position_delay</Name>
+            <Nr>P-COMP-000043</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Delay value for built-up of motor current</Text>
+                <Text LcId="1031">Verzögerungswert für den Stromaufbau</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the travel distance in [0.1µm] over which the motor current is built up during startup. By this a step shaped change can be avoided. The built-up of the current is linear.</Text>
+                <Text LcId="1031">Der Parameter definiert den Verzögerungswert für den Stromaufbau beim Anfahren. Er dient zur Vermeidung sprungförmiger Änderungen. Der Strom wird linear aufgebaut.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table_entries</Name>
+            <Nr>P-COMP-000042</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of elements in the compensation value table</Text>
+                <Text LcId="1031">Anzahl der Elemente in der Korrekturwerttabelle</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the number of entries in the compensation value table.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Einträge in die Korrekturwerttabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.mode</Name>
+            <Nr>P-COMP-000041</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0*</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Modus der Reibungskompensation</Text>
+                <Text LcId="1031">Modus der Reibungskompensation</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the processing mode of the friction compensation.</Text>
+                <Text LcId="1031">Der Parameter definiert, in welchem Modus die Reibungskompensation betrieben wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.file_path</Name>
+            <Nr>P-COMP-000040</Nr>
+            <Help />
+            <Type>STRING</Type>
+            <Default-Value>&lt;NC-Programm</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">File path and name</Text>
+                <Text LcId="1031">Dateipfad und -name</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines path and name by which the friction values measured are saved.</Text>
+                <Text LcId="1031">Der Parameter definiert Pfad und Name, unter dem die gemessenen Reibungswerte abgelegt werden.</Text>
+            </Comment>
+            <Format>%s</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.manual_activation</Name>
+            <Nr>P-COMP-000028</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Manual activation</Text>
+                <Text LcId="1031">Manuelles Einschalten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The CNC turns the leadscrew error compensation on when it is selected in the axis parameter list (P-AXIS-00175) and the required preconditions are met (e.g. the axis is homed).If the parameter is set to value one, the leadscrew error compensation must be manually turned on in the NC program with the #COMP command (s. [PROG//Selection/ deselection of axis compensations in NC program]. In addition, the compensation is turned off at the end of the NC program, during CNC reset and axis release.</Text>
+                <Text LcId="1031">Die Spindelsteigungsfehlerkompensation wird durch die CNC automatisch eingeschaltet, falls sie in den Achsparametern angewählt ist (P-AXIS-00175) und die notwendigen Voraussetzungen (z.B. Achse ist referenziert) erfüllt sind. Wird der Parameter auf den Wert 1 gesetzt, muss die Spindelsteigungsfehlerkompensation explizit über den #COMP-Befehl (s. [PROG//Ein-/Ausschalten von Achskompensationen im NC-Programm] im NC-Programm eingeschaltet werden. Zusätzlich wird am Ende des NC-Programms, bei CNC-Reset und bei Abgabe der Achse die Kompensation wieder ausgeschaltet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.manual_activation</Name>
+            <Nr>P-COMP-000030</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Manual activation</Text>
+                <Text LcId="1031">Manuelles Einschalten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The CNC turns the plane compensation on when it is selected in the axis parameter list (P-AXIS-00174) and the required preconditions are met (e.g. the axis is homed).If the parameter is set to value one, the plane compensation must be manually turned on in the NC program with the #COMP command (s. [PROG//Selection/deselection of axis compensations in NC program]. In addition, the compensation is turned off at the end of the NC program, during CNC reset and axis release.</Text>
+                <Text LcId="1031">Die Flächenkompensation wird durch die CNC automatisch eingeschaltet, falls sie in den Achsparametern angewählt ist (P-AXIS-00174) und die notwendigen Voraussetzungen (z.B. Achse ist referenziert) erfüllt sind.Wird der Parameter auf den Wert 1 gesetzt, muss die Flächenkompensation explizit über den #COMP-Befehl (s. [PROG//Ein-/Ausschalten von Achskompensationen im NC-Programm] im NC-Programm eingeschaltet werden. Zusätzlich wird am Ende des NC-Programms, bei CNC-Reset und bei Abgabe der Achse die Kompensation wieder ausgeschaltet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.n_cycles</Name>
+            <Nr>P-COMP-000027</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of cycles for smooth switching</Text>
+                <Text LcId="1031">Anzahl der Zyklen für 'weiches Schalten'</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the number of cycles, over which the plane compensation is turned on / off in a smooth way.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Anzahl der Zyklen, über welche die Flächenkompensation weich ein-/ausgekoppelt wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.master2_ax_nr</Name>
+            <Nr>P-COMP-000015</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number of master axis 2</Text>
+                <Text LcId="1031">Logische Achsnummer der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033"> The parameter defines the logical axis number of master axis 2.</Text>
+                <Text LcId="1031"> Mit dem Parameter wird die logische Achsnummer der zweiten Masterachse bestimmt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.master1_ax_nr</Name>
+            <Nr>P-COMP-000014</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number of master axis 1</Text>
+                <Text LcId="1031">Logische Achsnummer der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the logical axis number of master axis 1.</Text>
+                <Text LcId="1031">Mit dem Parameter wird die logische Achsnummer der ersten Masterachse bestimmt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.start_position_master2</Name>
+            <Nr>P-COMP-000013</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of master axis 2</Text>
+                <Text LcId="1031">Startposition der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position in the compensation table for master axis 2.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Masterachse 2, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.start_position_master1</Name>
+            <Nr>P-COMP-000012</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of master axis 1</Text>
+                <Text LcId="1031">Startposition der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position in the compensation table for master axis 1.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Masterachse 1, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.last_index_master2</Name>
+            <Nr>P-COMP-000011</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Last index of master axis 2</Text>
+                <Text LcId="1031">Letzter Index der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the last valid index in the table of master axis 2 (maximum value is 100). The table starts always with index 0.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der letzte gültige Index in der Tabelle der zweiten Masterachse (maximal 100 Werte) bestimmt. Die Tabelle beginnt immer mit Index 0.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.last_index_master1</Name>
+            <Nr>P-COMP-000010</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Last index of master axis 1</Text>
+                <Text LcId="1031">Letzter Index der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the last valid index in the table of master axis 1 (maximum value is 100). The table starts always with index 0.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der letzte gültige Index in der Tabelle der ersten Masterachse (maximal 100 Werte) bestimmt. Die Tabelle beginnt immer mit Index 0.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval2</Name>
+            <Nr>P-COMP-000033</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between the interpolation points of the second master axis</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten auf der zweiten Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033"> The parameter defines the distance of the interpolation points for the first master axis, if both master axis uses a different raster (P-COMP-000031 (grid)  = RECTANGULAR).</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Schrittweite zwischen zwei Stützpunkten für die erste Masterachse definiert, falls für die beiden Masterachsen eine unterschiedliche Rasterung verwendet wird (P-COMP-000031(grid) = RECTANGULAR).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval1</Name>
+            <Nr>P-COMP-000032</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between the interpolation points of the first master axis</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten auf der ersten Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the distance of the interpolation points for the first master axis, if both master axis uses a different raster (P-COMP-000031 (grid) = RECTANGULAR).</Text>
+                <Text LcId="1031">Mit dem Paramter wird die Schrittweite zwischen zwei Stützpunkten für die erste Masterachse definiert, falls für die beiden Masterachsen eine unterschiedliche Rasterung verwendet wird (P-COMP-000031(grid) = RECTANGULAR).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval</Name>
+            <Nr>P-COMP-000009</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between interpolation points</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the distance between two interpolation points, if both axis uses the identical raster (P-COMP-000031 (grid) = QUADRATIC).</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Schrittweite zwischen zwei Stützpunkten definiert, falls für die beiden Masterachsen die gleiche Rasterung verwendet wird (P-COMP-000031(grid) = QUADRATIC).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.grid</Name>
+            <Nr>P-COMP-000031</Nr>
+            <Help />
+            <Type>STRING</Type>
+            <Default-Value>QUADRATIC</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Type of interpolation point grid</Text>
+                <Text LcId="1031">Art der Stützpunkt-Rasterung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter  defines if the plane compensation uses an identical distance between the interpolation points for the two master axes or if the distance can be defined individual.</Text>
+                <Text LcId="1031">Mit dem Parameter wird festgelegt, ob für die beiden Masterachsen der identische Stützpunktabstand verwendet wird oder ob die Abstände für die beiden Masterachse individuell festgelegt werden.</Text>
+            </Comment>
+            <Format>%s</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.unit</Name>
+            <Nr>P-COMP-000008</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of the length/position entries</Text>
+                <Text LcId="1031">Einheit der Längenangaben</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of the length/ position entries of the compensation values.</Text>
+                <Text LcId="1031">Der Parameter definiert, in welcher Einheit die Längen-/Positions-angaben zu verwenden sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table[0].out</Name>
+            <Nr>P-COMP-000047</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Measured friction (motor current) - output variable</Text>
+                <Text LcId="1031">Gemessene Reibung (Motorstrom) - Ausgabegröße</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">*</Text>
+                <Text LcId="1031">*</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the current that is to be additionally output at the additive current interface.</Text>
+                <Text LcId="1031">Der Parameter definiert den Strom, der an der additiven Stromschnittstelle zusätzlich ausgegeben werden soll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">20</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table[0].in</Name>
+            <Nr>P-COMP-000046</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Speed - input variable</Text>
+                <Text LcId="1031">Geschwindigkeit - Eingangsgröße</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">Increments / cycle</Text>
+                <Text LcId="1031">Inkremente / Takt</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter definies the speeds for which the motor currents assigned in P-COMP-00047 are to be output through the additive current interface. Must be entered in ascending order.</Text>
+                <Text LcId="1031">Der Parameter definiert die Geschwindigkeiten, für die die in P-COMP-00047 vorgegebenen zusätzlichen Motorströme auf der additiven Stromschnittstelle ausgegeben werden sollen. Die Werte müssen aufsteigend eingegeben werden!</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">20</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.scaling_factor</Name>
+            <Nr>P-COMP-000045</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>1000</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Scaling factor for compensation values</Text>
+                <Text LcId="1031">Skalierungsfaktor für die Kompensationswerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">0.1%</Text>
+                <Text LcId="1031">0.1%</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the scaling factor for the entries in the compensation list</Text>
+                <Text LcId="1031">Der Parameter definiert die Skalierung aller Kompensationswerte der Liste.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.reversal_lookahead</Name>
+            <Nr>P-COMP-000044</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Reversal look-ahead</Text>
+                <Text LcId="1031">Lookahead der Umkehr</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">Cycles</Text>
+                <Text LcId="1031">Takte</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the number of cycles during which the motor current is dissipated before a motion reversal.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Takte, über die vor einer Bewegungsumkehr der Motorstrom abgebaut wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.position_delay</Name>
+            <Nr>P-COMP-000043</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Delay value for built-up of motor current</Text>
+                <Text LcId="1031">Verzögerungswert für den Stromaufbau</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the travel distance in [0.1µm] over which the motor current is built up during startup. By this a step shaped change can be avoided. The built-up of the current is linear.</Text>
+                <Text LcId="1031">Der Parameter definiert den Verzögerungswert für den Stromaufbau beim Anfahren. Er dient zur Vermeidung sprungförmiger Änderungen. Der Strom wird linear aufgebaut.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.table_entries</Name>
+            <Nr>P-COMP-000042</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of elements in the compensation value table</Text>
+                <Text LcId="1031">Anzahl der Elemente in der Korrekturwerttabelle</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the number of entries in the compensation value table.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Einträge in die Korrekturwerttabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.mode</Name>
+            <Nr>P-COMP-000041</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0*</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Modus der Reibungskompensation</Text>
+                <Text LcId="1031">Modus der Reibungskompensation</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines the processing mode of the friction compensation.</Text>
+                <Text LcId="1031">Der Parameter definiert, in welchem Modus die Reibungskompensation betrieben wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>frict_comp.file_path</Name>
+            <Nr>P-COMP-000040</Nr>
+            <Help />
+            <Type>STRING</Type>
+            <Default-Value>&lt;NC-Programm</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">File path and name</Text>
+                <Text LcId="1031">Dateipfad und -name</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Parameter defines path and name by which the friction values measured are saved.</Text>
+                <Text LcId="1031">Der Parameter definiert Pfad und Name, unter dem die gemessenen Reibungswerte abgelegt werden.</Text>
+            </Comment>
+            <Format>%s</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].setpoint</Name>
+            <Nr>P-COMP-000025</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Interpolation points of the axis</Text>
+                <Text LcId="1031">Stützpunkte der Achse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the interpolation points of the axis on which the axis has to be corrected.</Text>
+                <Text LcId="1031">Mit dem Parameter werden die Stützpunkte der Achse definiert, bei denen die Achse korrigiert werden muß.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">1500</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].neg</Name>
+            <Nr>P-COMP-000024</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation value in negative direction</Text>
+                <Text LcId="1031">Korrekturwert in negativer Richtung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or incr. R,S: 0.0001° or incr.</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines a compensation value in case of movement in negative direction at interpolation point 'i'.</Text>
+                <Text LcId="1031">Der Parameter definiert einen Korrekturwert bei Bewegung in negativer Richtung am Stützpunkt 'i'.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">1500</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.table[0].pos</Name>
+            <Nr>P-COMP-000023</Nr>
+            <Help />
+            <Type>SGN16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation value in positive direction</Text>
+                <Text LcId="1031">Korrekturwert in positiver Richtung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines a compensation value in case of movement in positive direction at interpolation point 'i'.</Text>
+                <Text LcId="1031">Der Parameter definiert einen Korrekturwert bei Bewegung in positiver Richtung am Stützpunkt 'i'.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">1500</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.manual_activation</Name>
+            <Nr>P-COMP-000028</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Manual activation</Text>
+                <Text LcId="1031">Manuelles Einschalten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The CNC turns the leadscrew error compensation on when it is selected in the axis parameter list (P-AXIS-00175) and the required preconditions are met (e.g. the axis is homed).If the parameter is set to value one, the leadscrew error compensation must be manually turned on in the NC program with the #COMP command (s. [PROG//Selection/ deselection of axis compensations in NC program]. In addition, the compensation is turned off at the end of the NC program, during CNC reset and axis release.</Text>
+                <Text LcId="1031">Die Spindelsteigungsfehlerkompensation wird durch die CNC automatisch eingeschaltet, falls sie in den Achsparametern angewählt ist (P-AXIS-00175) und die notwendigen Voraussetzungen (z.B. Achse ist referenziert) erfüllt sind. Wird der Parameter auf den Wert 1 gesetzt, muss die Spindelsteigungsfehlerkompensation explizit über den #COMP-Befehl (s. [PROG//Ein-/Ausschalten von Achskompensationen im NC-Programm] im NC-Programm eingeschaltet werden. Zusätzlich wird am Ende des NC-Programms, bei CNC-Reset und bei Abgabe der Achse die Kompensation wieder ausgeschaltet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.modulo</Name>
+            <Nr>P-COMP-000022</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Compensation of a modulo axis</Text>
+                <Text LcId="1031">Kompensation einer Moduloachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the compensation table for a modulo axis is defined. Here a 'modulo transition” also occurs in the compensation table at the modulo transition of the axis position.The following special aspects must be noted:The position values of the first and last entry in the compensation list must be the same.The number of compensation values is equal to the number of entries in the compensation value table here as well.</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Korrekturtabelle für eine Modulo-Achse konfiguriert. Hierbei findet beim Moduloübergang der Achsposition auch ein 'Moduloübergang' in der Korrekturtabelle statt.Dabei sind folgende Besonderheiten zu beachten:Die Positionswerte des ersten und des letzten Eintrags in der Korrekturliste müssen gleich sein.Die Anzahl der Korrekturwerte ist auch hier gleich der Anzahl der Einträge in der Korrekturwerttabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.bilateral</Name>
+            <Nr>P-COMP-000021</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Mode of compensation</Text>
+                <Text LcId="1031">Arbeitsweise der Kompensation</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines, if the compensation effects unilateral or bilateral.</Text>
+                <Text LcId="1031">Der Parameter definiert, ob die Kompensation einseitig oder doppelseitig wirken soll.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.kw_nr_max</Name>
+            <Nr>P-COMP-000020</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of compensation values</Text>
+                <Text LcId="1031">Anzahl der Korrekturwerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the number of entries in the compensation table is defined.</Text>
+                <Text LcId="1031">Der Parameter definiert die Anzahl der Einträge in der Korrekturtabelle.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.kw_startpos</Name>
+            <Nr>P-COMP-000019</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of compensation values</Text>
+                <Text LcId="1031">Startposition der Korrekturwerte</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position of the compensation table.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Achse, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.interval</Name>
+            <Nr>P-COMP-000018</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between interpolation points</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">With the parameter the spacing between interpolation points of the compensation table if using equidistant interpolation points is defined. If this parameter is = 0, the position of each interpolation point must be specified separately.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der Abstand der Stützpunkte der Korrekturtabelle bei Verwendung von äquidistanten Stützpunkten definiert. Ist dieser Parameter = 0 so muss die Position jedes Stützpunktes separat angegeben werden.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.ssfk.unit</Name>
+            <Nr>P-COMP-000017</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of the length/position entries </Text>
+                <Text LcId="1031">Einheit der Längenangaben</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of the length/ position entries of the compensation values.</Text>
+                <Text LcId="1031">Der Parameter bestimmt, in welcher Einheit die Längen-/ Positionsangaben zu verwenden sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.manual_activation</Name>
+            <Nr>P-COMP-000030</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Manual activation</Text>
+                <Text LcId="1031">Manuelles Einschalten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The CNC turns the plane compensation on when it is selected in the axis parameter list (P-AXIS-00174) and the required preconditions are met (e.g. the axis is homed).If the parameter is set to value one, the plane compensation must be manually turned on in the NC program with the #COMP command (s. [PROG//Selection/deselection of axis compensations in NC program]. In addition, the compensation is turned off at the end of the NC program, during CNC reset and axis release.</Text>
+                <Text LcId="1031">Die Flächenkompensation wird durch die CNC automatisch eingeschaltet, falls sie in den Achsparametern angewählt ist (P-AXIS-00174) und die notwendigen Voraussetzungen (z.B. Achse ist referenziert) erfüllt sind.Wird der Parameter auf den Wert 1 gesetzt, muss die Flächenkompensation explizit über den #COMP-Befehl (s. [PROG//Ein-/Ausschalten von Achskompensationen im NC-Programm] im NC-Programm eingeschaltet werden. Zusätzlich wird am Ende des NC-Programms, bei CNC-Reset und bei Abgabe der Achse die Kompensation wieder ausgeschaltet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.n_cycles</Name>
+            <Nr>P-COMP-000027</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of cycles for smooth switching</Text>
+                <Text LcId="1031">Anzahl der Zyklen für 'weiches Schalten'</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the number of cycles, over which the plane compensation is turned on / off in a smooth way.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Anzahl der Zyklen, über welche die Flächenkompensation weich ein-/ausgekoppelt wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.master2_ax_nr</Name>
+            <Nr>P-COMP-000015</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number of master axis 2</Text>
+                <Text LcId="1031">Logische Achsnummer der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033"> The parameter defines the logical axis number of master axis 2.</Text>
+                <Text LcId="1031"> Mit dem Parameter wird die logische Achsnummer der zweiten Masterachse bestimmt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.master1_ax_nr</Name>
+            <Nr>P-COMP-000014</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number of master axis 1</Text>
+                <Text LcId="1031">Logische Achsnummer der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the logical axis number of master axis 1.</Text>
+                <Text LcId="1031">Mit dem Parameter wird die logische Achsnummer der ersten Masterachse bestimmt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.start_position_master2</Name>
+            <Nr>P-COMP-000013</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of master axis 2</Text>
+                <Text LcId="1031">Startposition der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position in the compensation table for master axis 2.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Masterachse 2, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.start_position_master1</Name>
+            <Nr>P-COMP-000012</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Start position of master axis 1</Text>
+                <Text LcId="1031">Startposition der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the start position in the compensation table for master axis 1.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Position der Masterachse 1, bei der die Korrekturtabelle beginnt.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.last_index_master2</Name>
+            <Nr>P-COMP-000011</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Last index of master axis 2</Text>
+                <Text LcId="1031">Letzter Index der Masterachse 2</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the last valid index in the table of master axis 2 (maximum value is 100). The table starts always with index 0.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der letzte gültige Index in der Tabelle der zweiten Masterachse (maximal 100 Werte) bestimmt. Die Tabelle beginnt immer mit Index 0.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.last_index_master1</Name>
+            <Nr>P-COMP-000010</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Last index of master axis 1</Text>
+                <Text LcId="1031">Letzter Index der Masterachse 1</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the last valid index in the table of master axis 1 (maximum value is 100). The table starts always with index 0.</Text>
+                <Text LcId="1031">Mit dem Parameter wird der letzte gültige Index in der Tabelle der ersten Masterachse (maximal 100 Werte) bestimmt. Die Tabelle beginnt immer mit Index 0.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval2</Name>
+            <Nr>P-COMP-000033</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between the interpolation points of the second master axis</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten auf der zweiten Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033"> The parameter defines the distance of the interpolation points for the first master axis, if both master axis uses a different raster (P-COMP-000031 (grid)  = RECTANGULAR).</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Schrittweite zwischen zwei Stützpunkten für die erste Masterachse definiert, falls für die beiden Masterachsen eine unterschiedliche Rasterung verwendet wird (P-COMP-000031(grid) = RECTANGULAR).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval1</Name>
+            <Nr>P-COMP-000032</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between the interpolation points of the first master axis</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten auf der ersten Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the distance of the interpolation points for the first master axis, if both master axis uses a different raster (P-COMP-000031 (grid) = RECTANGULAR).</Text>
+                <Text LcId="1031">Mit dem Paramter wird die Schrittweite zwischen zwei Stützpunkten für die erste Masterachse definiert, falls für die beiden Masterachsen eine unterschiedliche Rasterung verwendet wird (P-COMP-000031(grid) = RECTANGULAR).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.interval</Name>
+            <Nr>P-COMP-000009</Nr>
+            <Help />
+            <Type>UNS32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Distance between interpolation points</Text>
+                <Text LcId="1031">Abstand zwischen den Stützpunkten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the distance between two interpolation points, if both axis uses the identical raster (P-COMP-000031 (grid) = QUADRATIC).</Text>
+                <Text LcId="1031">Mit dem Parameter wird die Schrittweite zwischen zwei Stützpunkten definiert, falls für die beiden Masterachsen die gleiche Rasterung verwendet wird (P-COMP-000031(grid) = QUADRATIC).</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.grid</Name>
+            <Nr>P-COMP-000031</Nr>
+            <Help />
+            <Type>STRING</Type>
+            <Default-Value>QUADRATIC</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Type of interpolation point grid</Text>
+                <Text LcId="1031">Art der Stützpunkt-Rasterung</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter  defines if the plane compensation uses an identical distance between the interpolation points for the two master axes or if the distance can be defined individual.</Text>
+                <Text LcId="1031">Mit dem Parameter wird festgelegt, ob für die beiden Masterachsen der identische Stützpunktabstand verwendet wird oder ob die Abstände für die beiden Masterachse individuell festgelegt werden.</Text>
+            </Comment>
+            <Format>%s</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp2.unit</Name>
+            <Nr>P-COMP-000008</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Unit of the length/position entries</Text>
+                <Text LcId="1031">Einheit der Längenangaben</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter defines the unit of the length/ position entries of the compensation values.</Text>
+                <Text LcId="1031">Der Parameter definiert, in welcher Einheit die Längen-/Positions-angaben zu verwenden sind.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.table[0].setpoint</Name>
+            <Nr>P-COMP-000006</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Interpolation point of the master axis</Text>
+                <Text LcId="1031">Stützpunkte der Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">T: 0.1µm or increments R,S: 0.0001° or increments</Text>
+                <Text LcId="1031">T: 0.1µm oder Inkremente R,S: 0.0001° oder Inkremente</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the absolute command positions of the master axis on which the slave axis has to be corrected.</Text>
+                <Text LcId="1031">Mit dem Parameter werden die Stützpunkte der Masterachse definiert, bei denen die Slaveachse korrigiert werden muß.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">1001</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.manual_activation</Name>
+            <Nr>P-COMP-00029</Nr>
+            <Help />
+            <Type>BOOLEAN</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Manual activation</Text>
+                <Text LcId="1031">Manuelles Einschalten</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The CNC turns the cross compensation on when it is selected in the axis parameter list (P-AXIS-00047) and the required preconditions are met (e.g. the axis is homed).If the parameter is set to value one, the cross compensation must be manually turned on in the NC program with the #COMP command (s. [PROG//Selection/deselection of axis compensations in NC program]. In addition, the compensation is turned off at the end of the NC program, during CNC reset and axis release.</Text>
+                <Text LcId="1031">Die Kreuzkompensation wird durch die CNC automatisch eingeschaltet, falls sie in den Achsparametern angewählt ist (P-AXIS-00047) und die notwendigen Voraussetzungen (z.B. Achse ist referenziert) erfüllt sind.Wird der Parameter auf den Wert 1 gesetzt, muss die Kreuzkompensation explizit über den #COMP-Befehl (s. [PROG//Ein-/Ausschalten von Achskompensationen im NC-Programm] im NC-Programm eingeschaltet werden. Zusätzlich wird am Ende des NC-Programms, bei CNC-Reset und bei Abgabe der Achse die Kompensation wieder ausgeschaltet.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.n_cycles</Name>
+            <Nr>P-COMP-00026</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Number of cycles for smooth switching</Text>
+                <Text LcId="1031">Anzahl der Zyklen für 'weiches Schalten'</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the number of cycles, over which the cross compensation shall be turned on / off in a smooth way.</Text>
+                <Text LcId="1031">Der Parameter bestimmt die Anzahl der Zyklen, über welche die Kreuzkompensation weich ein-/ausgekoppelt wird.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+        <Para>
+            <Name>kw.crosscomp.master_ax_nr</Name>
+            <Nr>P-COMP-00005</Nr>
+            <Help />
+            <Type>UNS16</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Logical axis number of the master axis</Text>
+                <Text LcId="1031">Logische Achsnummer der Masterachse</Text>
+            </DisplayName>
+            <Unit>
+                <Text LcId="1033">-</Text>
+                <Text LcId="1031">-</Text>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">The parameter determines the logical number of the master axis which command position is used to calculate the correction values for the slave axis.</Text>
+                <Text LcId="1031">Mit dem Parameter wird die logische Achsnummer der Masterachse bestimmt, deren Sollposition als Eingangsgrösse der Kompensationstabelle der Slaveachse dient.</Text>
+            </Comment>
+            <Format>%d</Format>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>3</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber />
+            <SystemChange>0</SystemChange>
+        </Para>
+    </ParaList>
+</TcParaDesc>

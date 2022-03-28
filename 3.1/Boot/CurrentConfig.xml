@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TcBootProject>
+	<System>
+		<LockedMemSize>2097152</LockedMemSize>
+		<AffinityMask>#x0000000000000001</AffinityMask>
+		<TComSrvAffinity>#x0000000000000001</TComSrvAffinity>
+	</System>
+	<Drivers>
+		<Driver>
+			<Type>1</Type>
+			<ServiceName>TCIO</ServiceName>
+		</Driver>
+		<Driver>
+			<Type>1</Type>
+			<ServiceName>TCRTIME</ServiceName>
+		</Driver>
+		<Driver>
+			<Type>1</Type>
+			<ServiceName>TCRTSOBJECTS</ServiceName>
+		</Driver>
+	</Drivers>
+	<InitCmds>
+		<InitCmd>
+			<key>Init1\IO: Download Config Id</key>
+			<port>300</port>
+			<iGrp>61696</iGrp>
+			<iOffs>4</iOffs>
+			<data>9d442609</data>
+		</InitCmd>
+		<InitCmd>
+			<key>Init4\RTime: Start Interrupt</key>
+			<port>200</port>
+			<iGrp>1</iGrp>
+			<iOffs>37</iOffs>
+			<data>0000000050000000102700000000000000000000000000000000000000000000</data>
+			<message>Ticker started</message>
+		</InitCmd>
+	</InitCmds>
+	<PostCmds>
+		<InitCmd>
+			<key>Init16\IO: Set State TComObj SAFEOP OP</key>
+			<port>10</port>
+			<iGrp>512</iGrp>
+			<iOffs>0</iOffs>
+		</InitCmd>
+	</PostCmds>
+	<ProjectInfo>
+		<ConfigurationFile/>
+		<DataTypes/>
+		<PlcProjects/>
+		<Tasks/>
+		<Devices/>
+	</ProjectInfo>
+</TcBootProject>

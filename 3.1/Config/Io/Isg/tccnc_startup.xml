@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc>
+	<StringList>
+		<String>
+			<Id>1001</Id>
+			<Text>Text Id 1001</Text>
+		</String>
+		<String>
+			<Id>1002</Id>
+			<Text>Text Id 1002</Text>
+		</String>
+		<String>
+			<Id>1003</Id>
+			<Text>Text Id 1003</Text>
+		</String>
+	</StringList>
+	<UnitList>
+		<Unit>
+			<UnitRef/>
+			<Unit/>
+		</Unit>
+	</UnitList>
+	<UserGroupList>
+		<UserGroup>Administrator</UserGroup>
+		<UserGroup>Supervisor</UserGroup>
+		<UserGroup>Superuser</UserGroup>
+		<UserGroup>User</UserGroup>
+		<UserGroup>No access</UserGroup>
+	</UserGroupList>
+	<DataTypes>
+		<DataType>
+			<Name>Data1</Name>
+			<Type>float</Type>
+		</DataType>
+		<DataType>
+			<Name>Data2</Name>
+			<Type>double</Type>
+		</DataType>
+	</DataTypes>
+	<ParaList>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">General parameter</Text>
+				<Text LcId="1031">Allgemeine Parameter</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>konfiguration</Name>
+			<Nr>P-STUP-00007</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Configuration</Text>
+				<Text LcId="1031">Konfiguration</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>ext_var_max</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of external variables in HLI</Text>
+				<Text LcId="1031">Anzahl der externen Variablen im HLI</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>plc_mode</Name>
+			<Nr>P-STUP-00032</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">PLC-mode</Text>
+				<Text LcId="1031">PLC-Mode</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">must be &#60;0&#62;</Text>
+				<Text LcId="1031">muss &#60;0&#62; sein</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>achs_kw_log_ax_nr&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Logical axis number of axis referenced to compensation table</Text>
+				<Text LcId="1031">Logische Achsnummer der zur Korrekturwertliste zugeordneten Achse</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>64</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>kanal_anzahl</Name>
+			<Nr>P-STUP-00001</Nr>
+			<Help/>
+			<Type>SGN16</Type>
+			<Default-Value>1</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of configured channels</Text>
+				<Text LcId="1031">Anzahl der konfigurierten Kan&#228;le</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>fb_storage_size&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>UNS32</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Memory for functionality backward on path</Text>
+				<Text LcId="1031">Speicher f&#252;r Funktionalit&#228;t R&#252;ckw&#228;rtsfahren</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hw_configuration_list</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>gui_mode</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>str_data&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>error_message_texts</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>single_protocol_fifo</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>scene_mds&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>collision_detected_outputfile&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>path_to_geometry&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>use_collision_detection&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>no_error_message_at_reset</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1/>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">NC-program</Text>
+				<Text LcId="1031">NC-Programm</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>pfad&#91;0&#93;.prg&#91;11&#93;</Name>
+			<Nr>P-STUP-00018</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Searchpath to NC-program</Text>
+				<Text LcId="1031">Suchpfad fuer NC-Programm</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>pfad&#91;0&#93;.log_nr&#91;11&#93;</Name>
+			<Nr>P-STUP-00019</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Logical path-number</Text>
+				<Text LcId="1031">Logische Pfadnummer</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>pfad&#91;0&#93;.typ&#91;11&#93;</Name>
+			<Nr>P-STUP-00020</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Pathtype</Text>
+				<Text LcId="1031">Pfadtyp</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>pfad&#91;0&#93;.prioritaet&#91;11&#93;</Name>
+			<Nr>P-STUP-00021</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Priority</Text>
+				<Text LcId="1031">Priorit&#228;t</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">Configuration lists</Text>
+				<Text LcId="1031">Konfigurierungslisten</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>sda_mds&#91;0&#93;</Name>
+			<Nr>P-STUP-00009</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of channel-parameter list</Text>
+				<Text LcId="1031">Name der Kanalparameterliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>default_sda_mds</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of default channel parameter list</Text>
+				<Text LcId="1031">Name der Default-Kanalparameterliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>werkz_data&#91;0&#93;</Name>
+			<Nr>P-STUP-00010</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of tool-parameter list</Text>
+				<Text LcId="1031">Name der Werkzeugdatenliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>nullp_data&#91;0&#93;</Name>
+			<Nr>P-STUP-00011</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of zero offsets parameter list</Text>
+				<Text LcId="1031">Name der Nullpunktparameterliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>ve_var&#91;0&#93;</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of list for external-variables</Text>
+				<Text LcId="1031">Name der Liste f&#252;r externe Variablen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>zahl_mds</Name>
+			<Nr>P-STUP-00014</Nr>
+			<Help/>
+			<Type>SGN16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of configured axis</Text>
+				<Text LcId="1031">Anzahl der konfigurierten Achsen</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>achs_mds&#91;0&#93;</Name>
+			<Nr>P-STUP-00015</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of axis-parameter list</Text>
+				<Text LcId="1031">Name der Achsmaschinenparameterliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>64</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>default_achs_mds</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of default axis list</Text>
+				<Text LcId="1031">Name der Default-Achsliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>zahl_kw</Name>
+			<Nr>P-STUP-00016</Nr>
+			<Help/>
+			<Type>SGN16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of configured compensation tables</Text>
+				<Text LcId="1031">Anzahl der konfigurierten Korrekturwertlisten</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>achs_kw&#91;0&#93;</Name>
+			<Nr>P-STUP-00017</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of axis specific compensation table</Text>
+				<Text LcId="1031">Name der achsspezifischen Korrekturwertlisten</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>64</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>listen</Name>
+			<Nr>P-STUP-00008</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Type of list</Text>
+				<Text LcId="1031">Listentyp</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">ASCII or binary, must be ASCII</Text>
+				<Text LcId="1031">ASCII oder Bin&#228;r, muss &#60;ASCII&#62;, </Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hand_mds</Name>
+			<Nr>P-STUP-00000</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of manual-mode parameter list</Text>
+				<Text LcId="1031">Name der Liste der Handbetriebsparameter</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>konf_path</Name>
+			<Nr>P-STUP-00023</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Path to configuration-lists</Text>
+				<Text LcId="1031">Pfad fuer Konfigurierungslisten</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>pzv_data&#91;0&#93;</Name>
+			<Nr>P-STUP-00012</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of channel specific list of clamp position offsets</Text>
+				<Text LcId="1031">Name der kanalspezifischen Liste der Platzversatzdaten</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Will be created automatically</Text>
+				<Text LcId="1031">Wird automatisch belegt</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">Objects</Text>
+				<Text LcId="1031">Objekte</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>0</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>0</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>hmi&#91;0&#93;.objects</Name>
+			<Nr>P-STUP-00024</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of internal HMI object list</Text>
+				<Text LcId="1031">Name der internen HMI-Objektliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">must be &#60;default&#62;</Text>
+				<Text LcId="1031">muss &#60;default&#62; sein</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>channel&#91;0&#93;.objects</Name>
+			<Nr>P-STUP-00026</Nr>
+			<Help/>
+			<Type>STRING</Type>
+			<Default-Value/>
+			<DisplayName>
+				<Text LcId="1033">Name of internal channel object list</Text>
+				<Text LcId="1031">Name der internen Channel-Objektliste</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">must be &#60;default&#62;</Text>
+				<Text LcId="1031">muss &#60;default&#62; sein</Text>
+			</Comment>
+			<Format>%s</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>12</MaxArrayElemente1>
+		</Para>
+	</ParaList>
+</TcParaDesc>

@@ -1,0 +1,31 @@
+# ****************************************
+#
+#TC_AXIS_COMP_DESC:    Axis compensation for X-Axis
+#
+# ****************************************
+#
+kopf.achs_nr                          1
+kopf.log_achs_name              X_ACHSE
+#
+#
+kw.ssfk.interval                 200000
+kw.ssfk.kw_startpos                   0
+kw.ssfk.kw_nr_max                     5
+kw.ssfk.modulo                        0
+kw.ssfk.unit                          0     /* 0:Increments 1:Metric */
+kw.ssfk.bilateral                     1
+#
+kw.ssfk.table[0].pos                        0     /*    0     */
+kw.ssfk.table[1].pos                        0     /*    20    */
+kw.ssfk.table[2].pos                        0     /*    40    */
+kw.ssfk.table[3].pos                        0     /*    60    */
+kw.ssfk.table[4].pos                        0     /*    80    */
+#
+kw.ssfk.table[0].neg                        0     /*     0    */
+kw.ssfk.table[1].neg                        0     /*    20    */
+kw.ssfk.table[2].neg                        0     /*    40    */
+kw.ssfk.table[3].neg                        0     /*    60    */
+kw.ssfk.table[4].neg                        0     /*    80    */
+#
+Ende
+

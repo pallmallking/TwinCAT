@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TcParaDesc.xsd">
+    <StringList>
+        <String>
+            <Id>1001</Id>
+            <Text>Text Id 1001</Text>
+        </String>
+        <String>
+            <Id>1002</Id>
+            <Text>Text Id 1002</Text>
+        </String>
+        <String>
+            <Id>1003</Id>
+            <Text>Text Id 1003</Text>
+        </String>
+    </StringList>
+    <UnitList>
+        <Unit>
+            <UnitRef>Position</UnitRef>
+            <Unit LcId="1033" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1031" AxisType="lin" UnitSystem="metric">
+                <Text>mm</Text>
+                <Factor>10000</Factor>
+                <Format>%.3lf</Format>
+                <!--0.1 µm-->
+            </Unit>
+            <Unit LcId="1033" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+            <Unit LcId="1031" AxisType="rot" UnitSystem="degree">
+                <Text>°</Text>
+                <Factor>10000</Factor>
+                <Format>%.4lf</Format>
+                <!--0.1 x 10^-3°-->
+            </Unit>
+        </Unit>
+    </UnitList>
+    <UserGroupList>
+        <UserGroup>Advanced</UserGroup>
+        <UserGroup>Standard</UserGroup>
+        <UserGroup>Basic</UserGroup>
+        <UserGroup>No access</UserGroup>
+    </UserGroupList>
+    <DataTypes>
+        <DataType>
+            <Name>Data1</Name>
+            <Type>float</Type>
+        </DataType>
+        <DataType>
+            <Name>Data2</Name>
+            <Type>double</Type>
+        </DataType>
+        <DataType>
+            <Name>BOOLEAN</Name>
+            <Type>CComboBox</Type>
+            <Comment>yes, no - type</Comment>
+            <Property>
+                <Name>0</Name>
+                <Value>0</Value>
+            </Property>
+            <Property>
+                <Name>1</Name>
+                <Value>1</Value>
+            </Property>
+            <Property>
+                <Name />
+            </Property>
+        </DataType>
+        <DataType>
+            <Name>ClampOffsParaType</Name>
+            <Type>CEdit</Type>
+            <ArrayInfo>
+                <LBound>0</LBound>
+                <Elements>150</Elements>
+            </ArrayInfo>
+            <ArrayInfo>
+                <LBound>1</LBound>
+                <Elements>31</Elements>
+            </ArrayInfo>
+        </DataType>
+        <DataType>
+            <Name>EditDialogTypes</Name>
+            <Type>CEditDialog</Type>
+            <Comment>Dialog for selecting variable parameter types</Comment>
+            <SubPara>
+                <Name>pzv_grp[%d].achse[%d].versatz</Name>
+                <Nr>P-CLMP-00001</Nr>
+                <Type>ClampOffsParaType</Type>
+                <Default-Value>0</Default-Value>
+                <DisplayName>
+                    <Text LcId="1033">Clamp position (offset) of axis</Text>
+                    <Text LcId="1031">Platzversatz (Verschiebung) der Achse</Text>
+                </DisplayName>
+            </SubPara>
+        </DataType>
+    </DataTypes>
+    <ParaList>
+        <Para>
+            <Name>Comment</Name>
+            <Type>
+            </Type>
+            <DisplayName>
+                <Text LcId="1033">Clamp position offset groups</Text>
+                <Text LcId="1031">Platzversatz Gruppen</Text>
+            </DisplayName>
+            <Visibility>
+                <UserGroup>0</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>0</UserGroup>
+            </Changebility>
+        </Para>
+        <Para>
+            <Name>pzv_grp[0].achse[0].versatz</Name>
+            <Nr>P-CLMP-00001</Nr>
+            <Help />
+            <Type>SGN32</Type>
+            <Default-Value>0</Default-Value>
+            <DisplayName>
+                <Text LcId="1033">Axis specific clamp position offset</Text>
+                <Text LcId="1031">Achsspezifischer Platzversatz</Text>
+            </DisplayName>
+            <Unit>
+                <UnitRef>Position</UnitRef>
+            </Unit>
+            <Comment>
+                <Text LcId="1033">Within each group of clamp position offsets for every axis an offset is provided.</Text>
+                <Text LcId="1031">Pro Platzversatzgruppe ist für jede Achse ein Versatzparameter reserviert.</Text>
+            </Comment>
+            <Property>
+                <Name />
+                <PropRef />
+            </Property>
+            <Visibility>
+                <UserGroup>1</UserGroup>
+            </Visibility>
+            <Changebility>
+                <UserGroup>1</UserGroup>
+            </Changebility>
+            <MaxNumber>
+                <ArrayIndex No="0">150</ArrayIndex>
+                <ArrayIndex No="1">32</ArrayIndex>
+            </MaxNumber>
+            <SystemChange>0</SystemChange>
+        </Para>
+    </ParaList>
+</TcParaDesc>

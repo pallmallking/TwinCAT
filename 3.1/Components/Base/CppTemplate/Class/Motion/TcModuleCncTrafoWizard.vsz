@@ -1,0 +1,3 @@
+VSWIZARD 7.0
+Wizard={48446BD2-A0D1-4AFC-989A-20DBEF65A879}
+Param="%TWINCAT3DIR%Components\Base\CppTemplate\Templates\TcModuleCncTrafo\TcModuleCncTrafo.xml"

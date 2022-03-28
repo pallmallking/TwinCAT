@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass">
+	<Vendor>
+		<Name>C++ Module Vendor</Name>
+	</Vendor>
+	<DataTypes>
+		<DataType>
+			<Name GUID="{b0b4ed26-0886-4ea6-a2e5-5ab1f3f02c97}" CName="PTcCncTrafoParameter">PTcCncTrafoParameter</Name>
+			<BitSize X64="64">32</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000018}">PVOID</BaseType>
+		</DataType>
+		<DataType>
+			<Name GUID="{38dd3359-7b76-4f8f-9c21-bdc3e8fa891a}" CName="ITcCncBase">ITcCncBase</Name>
+			<BitSize X64="64">32</BitSize>
+			<BaseType GUID="{00000001-0000-0000-e000-000000000064}">ITcUnknown</BaseType>
+			<Method>
+				<Name>GetInterfaceVersion</Name>
+				<ReturnType GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</ReturnType>
+				<Parameter>
+					<Name>pVersion</Name>
+					<Type GUID="{b9531a64-a46c-494a-8a35-8add2a03b1ff}" PointerTo="1">TcCncVersion</Type>
+				</Parameter>
+			</Method>
+			<Hides>
+      </Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{b9531a64-a46c-494a-8a35-8add2a03b1ff}" CName="TcCncVersion">TcCncVersion</Name>
+			<BitSize>64</BitSize>
+			<SubItem>
+				<Name>major</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000009}">DINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>minor</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000009}">DINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<Hides>
+      </Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{CA92EC02-8F19-407B-8D1D-2022CA551BB7}" CName="ITcCncTrafo">ITcCncTrafo</Name>
+			<BitSize X64="64">32</BitSize>
+			<BaseType GUID="{00000001-0000-0000-e000-000000000064}">ITcUnknown</BaseType>
+			<Method>
+				<Name>Forward</Name>
+				<ReturnType GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</ReturnType>
+				<Parameter>
+					<Name>p</Name>
+					<Type GUID="{b0b4ed26-0886-4ea6-a2e5-5ab1f3f02c97}">PTcCncTrafoParameter</Type>
+				</Parameter>
+			</Method>
+			<Method>
+				<Name>Backward</Name>
+				<ReturnType GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</ReturnType>
+				<Parameter>
+					<Name>p</Name>
+					<Type GUID="{b0b4ed26-0886-4ea6-a2e5-5ab1f3f02c97}">PTcCncTrafoParameter</Type>
+				</Parameter>
+			</Method>
+			<Method>
+				<Name>TrafoSupported</Name>
+				<ReturnType GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</ReturnType>
+				<Parameter>
+					<Name>p</Name>
+					<Type GUID="{b0b4ed26-0886-4ea6-a2e5-5ab1f3f02c97}">PTcCncTrafoParameter</Type>
+				</Parameter>
+				<Parameter>
+					<Name>fwd</Name>
+					<Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+				</Parameter>
+			</Method>
+			<Method>
+				<Name>GetDimensions</Name>
+				<ReturnType GUID="{18071995-0000-0000-0000-000000000019}">HRESULT</ReturnType>
+				<Parameter>
+					<Name>pForwardInput</Name>
+					<Type GUID="{18071995-0000-0000-0000-000000000008}" PointerTo="1">UDINT</Type>
+				</Parameter>
+				<Parameter>
+					<Name>pForwardOutput</Name>
+					<Type GUID="{18071995-0000-0000-0000-000000000008}" PointerTo="1">UDINT</Type>
+				</Parameter>
+			</Method>
+			<Hides>
+      </Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{60B717FF-0B8E-4C00-BC74-C04E3A717929}" Namespace="MC" TcBaseType="true">TcCncRegisterObject</Name>
+			<BitSize>64</BitSize>
+			<SubItem>
+				<Name>type</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<Comment><![CDATA[default from module TMC]]></Comment>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>group</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000005}">UINT</Type>
+				<Comment><![CDATA[set from System Manager]]></Comment>
+				<BitSize>16</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>index</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000008}">UDINT</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<Format>
+				<Printf>Type %d, Group %d, Index %d</Printf>
+				<Parameter>.type</Parameter>
+				<Parameter>.group</Parameter>
+				<Parameter>.index</Parameter>
+			</Format>
+			<Hides>
+      </Hides>
+		</DataType>
+	</DataTypes>
+	<Groups>
+		<Group>
+			<Name>[!output GROUP_NAME]</Name>
+			<DisplayName>C++ Modules</DisplayName>
+		</Group>
+	</Groups>
+	<Modules>
+		<Module GUID="[!output CLASS_ID]" Group="[!output GROUP_NAME]">
+			<Name>[!output CLASS_NAME]</Name>
+			<CLSID ClassFactory="[!output PROJECT_NAME]">[!output CLASS_ID]</CLSID>
+			<Licenses>
+				<License>
+					<LicenseId>{304D006A-8299-4560-AB79-438534B50288}</LicenseId>
+					<Comment>TC3 C++</Comment>
+				</License>
+			</Licenses>
+			<InitSequence>PSO</InitSequence>
+			<Contexts>
+				<Context>
+					<Id>1</Id>
+				</Context>
+			</Contexts>
+			<Interfaces>
+				<Interface DisableCodeGeneration="true">
+					<Type GUID="{00000012-0000-0000-E000-000000000064}">ITComObject</Type>
+				</Interface>
+				<Interface DisableCodeGeneration="true">
+					<Type GUID="{03000012-0000-0000-E000-000000000064}">ITcADI</Type>
+				</Interface>
+				<Interface DisableCodeGeneration="true">
+					<Type GUID="{03000018-0000-0000-E000-000000000064}">ITcWatchSource</Type>
+				</Interface>
+				<Interface DisableCodeGeneration="true">
+					<Type GUID="{38dd3359-7b76-4f8f-9c21-bdc3e8fa891a}">ITcCncBase</Type>
+				</Interface>
+				<Interface DisableCodeGeneration="true">
+					<Type GUID="{CA92EC02-8F19-407B-8D1D-2022CA551BB7}">ITcCncTrafo</Type>
+				</Interface>
+			</Interfaces>
+			<Parameters>
+				<Parameter>
+					<Name>CncObjectRef</Name>
+					<BaseType GUID="{60b717ff-0b8e-4c00-bc74-c04e3a717929}" Namespace="MC">TcCncRegisterObject</BaseType>
+					<Default>
+						<SubItem>
+							<Name>.type</Name>
+							<Value>1</Value>
+						</SubItem>
+						<SubItem>
+							<Name>.group</Name>
+							<Value>1</Value>
+						</SubItem>
+						<SubItem>
+							<Name>.index</Name>
+							<Value>500</Value>
+						</SubItem>
+					</Default>
+					<PTCID>#x00000001</PTCID>
+					<ContextId>1</ContextId>
+				</Parameter>
+			</Parameters>
+			<DataAreas/>
+			<InterfacePointers/>
+			<DataPointers/>
+[!if VERSIONED_CLASSFACTORY]
+			<Deployment></Deployment>
+[!else]
+			<Deployment>
+				<FileEntry TargetPlatform="TwinCAT RT (x86)">
+					<SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x86)\%CLASSFACTORYNAME%.sys</SourceFile>
+					<DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.sys</DestinationFile>
+				</FileEntry>
+				<FileEntry TargetPlatform="TwinCAT RT (x86)">
+					<SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x86)\%CLASSFACTORYNAME%.pdb</SourceFile>
+					<DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.pdb</DestinationFile>
+				</FileEntry>
+				<FileEntry TargetPlatform="TwinCAT RT (x64)">
+					<SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x64)\%CLASSFACTORYNAME%.sys</SourceFile>
+					<DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.sys</DestinationFile>
+				</FileEntry>
+				<FileEntry TargetPlatform="TwinCAT RT (x64)">
+					<SourceFile>%SOLUTIONDEPLOYMENTPATH%TwinCAT RT (x64)\%CLASSFACTORYNAME%.pdb</SourceFile>
+					<DestinationFile>%TC_DRIVERAUTOINSTALLPATH%%CLASSFACTORYNAME%.pdb</DestinationFile>
+				</FileEntry>
+			</Deployment>
+[!endif]
+		</Module>
+	</Modules>
+</TcModuleClass>

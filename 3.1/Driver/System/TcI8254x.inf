@@ -1,0 +1,535 @@
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %Bkhf%
+Compatible  = 1
+DriverVer   = 07/08/2021,3.01.00.3604
+CatalogFile = TcI8254x.cat 
+
+[Manufacturer]
+%Intel%     = Intel,NTx86,NTia64,NTamd64
+
+;for W2k
+[Intel]
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1000   ; Intel 82542
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1001   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1004   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1008   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1009   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100C   ; Intel 82543EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100D   ; Intel 82544GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100E   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100F   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1010   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1011   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1012   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1013   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1014   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1015   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1016   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1017   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1018   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1019   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101A   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101D   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101E   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1026   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1027   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1028   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1049	; Intel 82566MM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104A	; Intel 82566DM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104B   ; Intel 82566DC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104C	; Intel 82562V - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104D   ; Intel 82566MC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105E   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105F   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1060   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1075   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1076   ; Intel 82541GI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1077   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1078   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1079   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107A   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107B   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107C   ; Intel 82541PI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107D   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107E   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107F   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108A   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108B   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108C   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1096   ; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1098   ; Intel 80003ES2LAN	
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1099   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_109A   ; Intel 82573L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A4   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A7	  ; Intel 82575
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	  ; Intel 82575 (serdes)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B5   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B9   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BA	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BB	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BC	; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BD	; Intel 82566DM	- ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C4	; Intel 82562GT - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C5	; Intel 82562G - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C9	; Intel 82576
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10D3	; Intel 82574L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	; Intel 82575 (quad copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10CB	; Intel 82567V - ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E5	; Intel 82567LM-4 - ICH9
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E6	; Intel 82576 (fiber)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E7	; Intel 82576 (serdes)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E8	; Intel 82576 (quad Copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EA	; Intel 82577LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EB	; Intel 82577LC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EF	; Intel 82578DM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F0	; Intel 82578DC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F5	; Intel 82567LM - ICH9(e.g. Dell E6400 Notebook)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1502 ; Intel 82579LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1503 ; Intel 82579V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150A	; Intel 82576NS
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150E	; Intel 82580
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153A	; Intel I217 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153B	; Intel I217 VA
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1559	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_155A	; Intel I218 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A0	; Intel I218 LM2
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A1	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A2	; Intel I218 LM3
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A3	; Intel I218 V3
+
+;for Xp and later
+[Intel.NTx86]
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1000   ; Intel 82542
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1001   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1004   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1008   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1009   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100C   ; Intel 82543EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100D   ; Intel 82544GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100E   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100F   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1010   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1011   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1012   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1013   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1014   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1015   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1016   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1017   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1018   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1019   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101A   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101D   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101E   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1026   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1027   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1028   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1049	; Intel 82566MM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104A	; Intel 82566DM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104B   ; Intel 82566DC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104C	; Intel 82562V - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104D   ; Intel 82566MC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105E   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105F   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1060   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1075   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1076   ; Intel 82541GI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1077   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1078   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1079   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107A   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107B   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107C   ; Intel 82541PI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107D   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107E   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107F   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108A   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108B   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108C   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1096   ; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1098   ; Intel 80003ES2LAN	
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1099   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_109A   ; Intel 82573L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A4   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A7	  ; Intel 82575
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	  ; Intel 82575 (serdes)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B5   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B9   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BA	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BB	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BC	; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BD	; Intel 82566DM	- ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C4	; Intel 82562GT - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C5	; Intel 82562G - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C9	; Intel 82576
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10D3	; Intel 82574L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	; Intel 82575 (quad copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10CB	; Intel 82567V - ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E5	; Intel 82567LM-4 - ICH9
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E6	; Intel 82576 (fiber)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E7	; Intel 82576 (serdes)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E8	; Intel 82576 (quad Copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EA	; Intel 82577LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EB	; Intel 82577LC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EF	; Intel 82578DM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F0	; Intel 82578DC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F5	; Intel 82567LM - ICH9(e.g. Dell E6400 Notebook)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1502 ; Intel 82579LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1503 ; Intel 82579V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150A	; Intel 82576NS
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150E	; Intel 82580
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153A	; Intel I217 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153B	; Intel I217 VA
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1559	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_155A	; Intel I218 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A0	; Intel I218 LM2
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A1	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A2	; Intel I218 LM3
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A3	; Intel I218 V3
+
+[Intel.NTia64]
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1000   ; Intel 82542
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1001   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1004   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1008   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1009   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100C   ; Intel 82543EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100D   ; Intel 82544GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100E   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100F   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1010   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1011   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1012   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1013   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1014   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1015   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1016   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1017   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1018   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1019   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101A   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101D   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101E   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1026   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1027   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1028   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1049	; Intel 82566MM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104A	; Intel 82566DM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104B   ; Intel 82566DC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104C	; Intel 82562V - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104D   ; Intel 82566MC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105E   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105F   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1060   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1075   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1076   ; Intel 82541GI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1077   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1078   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1079   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107A   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107B   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107C   ; Intel 82541PI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107D   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107E   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107F   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108A   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108B   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108C   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1096   ; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1098   ; Intel 80003ES2LAN	
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1099   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_109A   ; Intel 82573L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A4   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A7	  ; Intel 82575
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	  ; Intel 82575 (serdes)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B5   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B9   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BA	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BB	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BC	; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BD	; Intel 82566DM	- ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C4	; Intel 82562GT - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C5	; Intel 82562G - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C9	; Intel 82576
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10D3	; Intel 82574L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	; Intel 82575 (quad copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10CB	; Intel 82567V - ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E5	; Intel 82567LM-4 - ICH9
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E6	; Intel 82576 (fiber)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E7	; Intel 82576 (serdes)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E8	; Intel 82576 (quad Copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EA	; Intel 82577LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EB	; Intel 82577LC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EF	; Intel 82578DM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F0	; Intel 82578DC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F5	; Intel 82567LM - ICH9(e.g. Dell E6400 Notebook)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1502 ; Intel 82579LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1503 ; Intel 82579V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150A	; Intel 82576NS
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150E	; Intel 82580
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153A	; Intel I217 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153B	; Intel I217 VA
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1559	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_155A	; Intel I218 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A0	; Intel I218 LM2
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A1	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A2	; Intel I218 LM3
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A3	; Intel I218 V3
+
+[Intel.NTamd64]
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1000   ; Intel 82542
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1001   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1004   ; Intel 82543GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1008   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1009   ; Intel 82544EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100C   ; Intel 82543EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100D   ; Intel 82544GC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100E   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_100F   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1010   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1011   ; Intel 82545EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1012   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1013   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1014   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1015   ; Intel 82540EM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1016   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1017   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1018   ; Intel 82541EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1019   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101A   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101D   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_101E   ; Intel 82540EP
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1026   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1027   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1028   ; Intel 82545GM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1049	; Intel 82566MM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104A	; Intel 82566DM	- ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104B   ; Intel 82566DC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104C	; Intel 82562V - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_104D   ; Intel 82566MC - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105E   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_105F   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1060   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1075   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1076   ; Intel 82541GI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1077   ; Intel 82547EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1078   ; Intel 82541ER
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1079   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107A   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107B   ; Intel 82546EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107C   ; Intel 82541PI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107D   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107E   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_107F   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108A   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108B   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_108C   ; Intel 82573E
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1096   ; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1098   ; Intel 80003ES2LAN	
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1099   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_109A   ; Intel 82573L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A4   ; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A7	  ; Intel 82575
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	  ; Intel 82575 (serdes)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B5   ; Intel 82546GB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10B9   ; Intel 82572EI
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BA	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BB	; Intel 80003ES2LAN
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BC	; Intel 82571EB
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10BD	; Intel 82566DM	- ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C4	; Intel 82562GT - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C5	; Intel 82562G - ICH8
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10C9	; Intel 82576
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10D3	; Intel 82574L
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10A9	; Intel 82575 (quad copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10CB	; Intel 82567V - ICH9
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E5	; Intel 82567LM-4 - ICH9
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E6	; Intel 82576 (fiber)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E7	; Intel 82576 (serdes)
+;%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10E8	; Intel 82576 (quad Copper)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EA	; Intel 82577LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EB	; Intel 82577LC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10EF	; Intel 82578DM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F0	; Intel 82578DC
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_10F5	; Intel 82567LM - ICH9(e.g. Dell E6400 Notebook)
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1502 ; Intel 82579LM 
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1503 ; Intel 82579V 
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150A	; Intel 82576NS
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_150E	; Intel 82580
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153A	; Intel I217 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_153B	; Intel I217 VA
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_1559	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_155A	; Intel I218 LM
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A0	; Intel I218 LM2
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A1	; Intel I218 V
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A2	; Intel I218 LM3
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_15A3	; Intel I218 V3
+%TCI8254X.DeviceDesc%  = TCI8254X.ndi,    PCI\VEN_8086&DEV_156F	; Intel I219 LM
+
+;-------------- Coinstaller installation
+;[TCI8254X.ndi.NT.CoInstallers]
+;AddReg=CoInstaller_AddReg
+;CopyFiles=CoInstaller_CopyFiles
+
+;[CoInstaller_CopyFiles]
+;TcI8xxCo.dll
+
+;[CoInstaller_AddReg]
+;HKR,,CoInstallers32,0x00010000,"TcI8xxCo.dll,TcI825xxCoInstaller"
+
+;[TcI8254xCoInfo] 
+;OriginalInfSourcePath = %1%
+
+[TCI8254X.ndi.NT]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 82541.reg, TCI8254X.reg
+CopyFiles       = TCI8254X.CopyFiles
+DelReg	        = TcI8254xDel.reg
+
+[TCI8254X.ndi.NT.Services]
+AddService = TCI8254X, 2, TCI8254X.Service, common.EventLog
+
+[82541.reg]
+HKR, ,                          NumRfd,     0, "256"
+HKR, ,                          NumTcb,     0, "256"
+
+HKR, Ndi\params\NumRfd,         ParamDesc,  0, "%ReceiveFrameDescriptors%"
+HKR, Ndi\params\NumRfd,         default,    0, "256"
+HKR, Ndi\params\NumRfd,         min,        0, "32"
+HKR, Ndi\params\NumRfd,         max,        0, "4096"
+HKR, Ndi\params\NumRfd,         step,       0, "1"
+HKR, Ndi\params\NumRfd,         Base,       0, "10"
+HKR, Ndi\params\NumRfd,         type,       0, "int"
+
+HKR, Ndi\params\NumTcb,         ParamDesc,  0, "%TransmitControlBlocks%"
+HKR, Ndi\params\NumTcb,         default,    0, "256"
+HKR, Ndi\params\NumTcb,         min,        0, "32"
+HKR, Ndi\params\NumTcb,         max,        0, "4096"
+HKR, Ndi\params\NumTcb,         step,       0, "1"
+HKR, Ndi\params\NumTcb,         Base,       0, "10"
+HKR, Ndi\params\NumTcb,         type,       0, "int"
+
+HKR, Ndi\params\NumCoalesce,    ParamDesc,  0, "%NumCoalesceBuffers%"
+HKR, Ndi\params\NumCoalesce,    default,    0, "64"
+HKR, Ndi\params\NumCoalesce,    min,        0, "64"
+HKR, Ndi\params\NumCoalesce,    max,        0, "1024"
+HKR, Ndi\params\NumCoalesce,    step,       0, "1"
+HKR, Ndi\params\NumCoalesce,    Base,       0, "10"
+HKR, Ndi\params\NumCoalesce,    type,       0, "int"
+
+HKR, Ndi\params\Threshold,    ParamDesc,  0, "%TxThreshold%"
+HKR, Ndi\params\Threshold,    default,    0, "200"
+HKR, Ndi\params\Threshold,    min,        0, "1"
+HKR, Ndi\params\Threshold,    max,        0, "200"
+HKR, Ndi\params\Threshold,    step,       0, "1"
+HKR, Ndi\params\Threshold,    Base,       0, "10"
+HKR, Ndi\params\Threshold,    type,       0, "int"
+
+HKR, Ndi\params\TxIpg,    ParamDesc,  0, "%TxInterPacketGap%"
+HKR, Ndi\params\TxIpg,    default,    0, "12"
+HKR, Ndi\params\TxIpg,    min,        0, "4"
+HKR, Ndi\params\TxIpg,    max,        0, "200"
+HKR, Ndi\params\TxIpg,    step,       0, "1"
+HKR, Ndi\params\TxIpg,    Base,       0, "10"
+HKR, Ndi\params\TxIpg,    type,       0, "int"
+
+HKR, Ndi\params\LinkSpeedDuplex,                           ParamDesc,              0, %SpeedDuplex%
+HKR, Ndi\params\LinkSpeedDuplex,                           default,                0, "0"
+HKR, Ndi\params\LinkSpeedDuplex,                           type,                   0, "enum"
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "0",                    0, %AutoNegotiation%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "1",                    0, %10Mb_Half_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "2",                    0, %10Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "3",                    0, %100Mb_Half_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "4",                    0, %100Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "5",                    0, %1000Mb_Full_Duplex%
+
+[TcI8254xDel.reg]
+HKR,,NumRfd
+HKR,,NumTcb
+HKR,,NumCoalesce
+HKR,,PhyAddress
+HKR,,Connector
+HKR,,TxFifo
+HKR,,RxFifo
+HKR,,TxDmaCount
+HKR,,RxDmaCount
+HKR,,UnderrunRetry
+HKR,,Threshold
+HKR,,TxIpg
+HKR,,MWIEnable
+HKR,,Congest
+HKR,,LinkSpeedDuplex
+HKR,,IgnoreOwnSourceMAC
+HKR,,EnablePollingMode
+
+[TCI8254X.reg]
+HKR, Ndi,                       Service,    0, "TCI8254X"
+HKR, Ndi\Interfaces,            UpperRange, 0, "ndis5,tcether"
+HKR, Ndi\Interfaces,            LowerRange, 0, "ethernet"
+
+[TCI8254X.Service]
+DisplayName     = %TCI8254X.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 2 ;%SERVICE_AUTO_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\TCI8254X.sys
+LoadOrderGroup  = NDIS
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TCI8254X.CopyFiles]
+;TCI8254X.sys,,,2
+
+[SourceDisksNames]
+1 = "TwinCAT Driver Disk 1",TCI8254X.sys,,
+
+[SourceDisksFiles]
+TCI8254X.sys = 1,,
+;TcI8xxCo.dll = 1,,
+
+[DestinationDirs]
+TCI8254X.CopyFiles         = 12
+DefaultDestDirs            = 11
+
+[Strings]
+Intel                      = "Intel"
+Bkhf                       = "Beckhoff"
+
+TCI8254X.DeviceDesc        = "TwinCAT-Intel PCI Ethernet Adapter (Gigabit)"
+TCI8254X.Service.DispName  = "TwinCAT 8254x based Ethernet Adapter NT Driver"
+
+ReceiveFrameDescriptors    = "Receive Frame Descriptors"
+TransmitControlBlocks      = "Transmit Control Blocks"
+NumCoalesceBuffers         = "Coalesce Buffers"
+TxThreshold				   = "Transmit Threshold"
+TxInterPacketGap		   = "Transmit Inter Packet Gap(in byte)"
+JumboPacket				   = "Jumbo Packet"
+
+AutoNegotiation             = "Auto Negotiation"
+SpeedDuplex                 = "Link Speed & Duplex"
+10Mb_Half_Duplex            = "10 Mbps Half Duplex"
+10Mb_Full_Duplex            = "10 Mbps Full Duplex"
+100Mb_Half_Duplex           = "100 Mbps Half Duplex"
+100Mb_Full_Duplex           = "100 Mbps Full Duplex"
+1000Mb_Full_Duplex          = "1.0 Gbps Full Duplex"

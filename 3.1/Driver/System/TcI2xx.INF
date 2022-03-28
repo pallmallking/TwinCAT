@@ -1,0 +1,462 @@
+[version]
+Signature	= "$Windows NT$"
+Class		 = Net
+ClassGUID	= {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider	 = %Bkhf%
+Compatible  = 1
+DriverVer	= 11/16/2021,3.01.00.11
+CatalogFile = TcI2xx.cat
+
+[Manufacturer]
+%Intel%	  = Intel,NTx86,NTia64,NTamd64
+
+
+;for W2k
+[Intel]
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1534	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1535	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1536	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1537	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1538	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157C	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1539	; Intel I211
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F40	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F41	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F45	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_156F	; Intel I219 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1570	; Intel I219 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B7	; Intel I219 LM2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B8	; Intel I219 V2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B9	; Intel I219 LM3
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D7	; Intel I219 LM4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D8	; Intel I219 V4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E3	; Intel I219 LM5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D6	; Intel I219 V5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BD	; Intel I219 LM6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BE	; Intel I219 V6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BB	; Intel I219 LM7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BC	; Intel I219 V7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15DF	; Intel I219 LM8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E0	; Intel I219 V8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E1	; Intel I219 LM9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E2	; Intel I219 V9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4E	; Intel I219 LM10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4F	; Intel I219 V10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4C	; Intel I219 LM11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4D	; Intel I219 V11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D53	; Intel I219 LM12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D55	; Intel I219 V12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F2	; Intel I225 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F3	; Intel I225 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_3100	; Intel I225 K
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F7	; Intel I220 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F8	; Intel I225 I
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15FD	; Intel I225 blank/nvm
+
+;for Xp and later
+[Intel.NTx86]
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1534	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1535	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1536	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1537	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1538	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157C	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1539	; Intel I211
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F40	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F41	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F45	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_156F	; Intel I219 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1570	; Intel I219 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B7	; Intel I219 LM2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B8	; Intel I219 V2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B9	; Intel I219 LM3
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D7	; Intel I219 LM4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D8	; Intel I219 V4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E3	; Intel I219 LM5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D6	; Intel I219 V5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BD	; Intel I219 LM6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BE	; Intel I219 V6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BB	; Intel I219 LM7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BC	; Intel I219 V7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15DF	; Intel I219 LM8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E0	; Intel I219 V8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E1	; Intel I219 LM9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E2	; Intel I219 V9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4E	; Intel I219 LM10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4F	; Intel I219 V10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4C	; Intel I219 LM11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4D	; Intel I219 V11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D53	; Intel I219 LM12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D55	; Intel I219 V12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F2	; Intel I225 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F3	; Intel I225 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_3100	; Intel I225 K
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F7	; Intel I220 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F8	; Intel I225 I
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15FD	; Intel I225 blank/nvm
+
+
+[Intel.NTia64]
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1534	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1535	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1536	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1537	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1538	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157C	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1539	; Intel I211
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F40	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F41	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F45	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_156F	; Intel I219 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1570	; Intel I219 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B7	; Intel I219 LM2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B8	; Intel I219 V2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B9	; Intel I219 LM3
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D7	; Intel I219 LM4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D8	; Intel I219 V4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E3	; Intel I219 LM5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D6	; Intel I219 V5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BD	; Intel I219 LM6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BE	; Intel I219 V6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BB	; Intel I219 LM7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BC	; Intel I219 V7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15DF	; Intel I219 LM8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E0	; Intel I219 V8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E1	; Intel I219 LM9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E2	; Intel I219 V9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4E	; Intel I219 LM10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4F	; Intel I219 V10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4C	; Intel I219 LM11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4D	; Intel I219 V11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D53	; Intel I219 LM12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D55	; Intel I219 V12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F2	; Intel I225 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F3	; Intel I225 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_3100	; Intel I225 K
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F7	; Intel I220 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F8	; Intel I225 I
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15FD	; Intel I225 blank/nvm
+
+
+[Intel.NTamd64]
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1521	; Intel I350
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1533	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1534	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1535	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1536	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1537	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1538	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157B	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_157C	; Intel I210
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1539	; Intel I211
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F40	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F41	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1F45	; Intel I354
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_156F	; Intel I219 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_1570	; Intel I219 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B7	; Intel I219 LM2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B8	; Intel I219 V2
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15B9	; Intel I219 LM3
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D7	; Intel I219 LM4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D8	; Intel I219 V4
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E3	; Intel I219 LM5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15D6	; Intel I219 V5
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BD	; Intel I219 LM6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BE	; Intel I219 V6
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BB	; Intel I219 LM7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15BC	; Intel I219 V7
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15DF	; Intel I219 LM8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E0	; Intel I219 V8
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E1	; Intel I219 LM9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15E2	; Intel I219 V9
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4E	; Intel I219 LM10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4F	; Intel I219 V10
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4C	; Intel I219 LM11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D4D	; Intel I219 V11
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D53	; Intel I219 LM12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_0D55	; Intel I219 V12
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F2	; Intel I225 LM
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F3	; Intel I225 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_3100	; Intel I225 K
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F7	; Intel I220 V
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15F8	; Intel I225 I
+%TCI2XX.DeviceDesc%  = TCI2XX.ndi,	 PCI\VEN_8086&DEV_15FD	; Intel I225 blank/nvm
+
+
+;-------------- Coinstaller installation
+;[TCI2XX.ndi.NT.CoInstallers]
+;AddReg=CoInstaller_AddReg
+;CopyFiles=CoInstaller_CopyFiles
+
+;[CoInstaller_CopyFiles]
+;TcI8xxCo.dll
+
+;[CoInstaller_AddReg]
+;HKR,,CoInstallers32,0x00010000,"TcI8xxCo.dll,TcI825xxCoInstaller"
+
+;[TcII2xxCoInfo]
+;OriginalInfSourcePath = %1%
+
+[TCI2XX.ndi.NT]
+Characteristics = 0x84
+BusType			= 5
+AddReg			 = 82541.reg, TCI2XX.reg
+CopyFiles		 = TCI2XX.CopyFiles
+DelReg			  = TcII2xxDel.reg
+
+[TCI2XX.ndi.NT.Services]
+AddService = TCI2XX, 2, TCI2XX.Service, common.EventLog
+
+[82541.reg]
+HKR, ,								  NumRfd,	  0, "256"
+HKR, ,								  NumTcb,	  0, "256"
+
+HKR, Ndi\params\NumRfd,			ParamDesc,  0, "%ReceiveFrameDescriptors%"
+HKR, Ndi\params\NumRfd,			default,	 0, "256"
+HKR, Ndi\params\NumRfd,			min,		  0, "32"
+HKR, Ndi\params\NumRfd,			max,		  0, "4096"
+HKR, Ndi\params\NumRfd,			step,		 0, "1"
+HKR, Ndi\params\NumRfd,			Base,		 0, "10"
+HKR, Ndi\params\NumRfd,			type,		 0, "int"
+
+HKR, Ndi\params\NumTcb,			ParamDesc,  0, "%TransmitControlBlocks%"
+HKR, Ndi\params\NumTcb,			default,	 0, "256"
+HKR, Ndi\params\NumTcb,			min,		  0, "32"
+HKR, Ndi\params\NumTcb,			max,		  0, "4096"
+HKR, Ndi\params\NumTcb,			step,		 0, "1"
+HKR, Ndi\params\NumTcb,			Base,		 0, "10"
+HKR, Ndi\params\NumTcb,			type,		 0, "int"
+
+HKR, Ndi\params\NumCoalesce,	 ParamDesc,  0, "%NumCoalesceBuffers%"
+HKR, Ndi\params\NumCoalesce,	 default,	 0, "64"
+HKR, Ndi\params\NumCoalesce,	 min,		  0, "64"
+HKR, Ndi\params\NumCoalesce,	 max,		  0, "1024"
+HKR, Ndi\params\NumCoalesce,	 step,		 0, "1"
+HKR, Ndi\params\NumCoalesce,	 Base,		 0, "10"
+HKR, Ndi\params\NumCoalesce,	 type,		 0, "int"
+
+HKR, Ndi\params\Threshold,	 ParamDesc,  0, "%TxThreshold%"
+HKR, Ndi\params\Threshold,	 default,	 0, "200"
+HKR, Ndi\params\Threshold,	 min,		  0, "1"
+HKR, Ndi\params\Threshold,	 max,		  0, "200"
+HKR, Ndi\params\Threshold,	 step,		 0, "1"
+HKR, Ndi\params\Threshold,	 Base,		 0, "10"
+HKR, Ndi\params\Threshold,	 type,		 0, "int"
+
+HKR, Ndi\params\TxIpg,	 ParamDesc,  0, "%TxInterPacketGap%"
+HKR, Ndi\params\TxIpg,	 default,	 0, "12"
+HKR, Ndi\params\TxIpg,	 min,		  0, "4"
+HKR, Ndi\params\TxIpg,	 max,		  0, "200"
+HKR, Ndi\params\TxIpg,	 step,		 0, "1"
+HKR, Ndi\params\TxIpg,	 Base,		 0, "10"
+HKR, Ndi\params\TxIpg,	 type,		 0, "int"
+
+HKR, Ndi\params\LinkSpeedDuplex,									ParamDesc,				  0, %SpeedDuplex%
+HKR, Ndi\params\LinkSpeedDuplex,									default,					 0, "0"
+HKR, Ndi\params\LinkSpeedDuplex,									type,						 0, "enum"
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "0",						  0, %AutoNegotiation%
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "1",						  0, %10Mb_Half_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "2",						  0, %10Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "3",						  0, %100Mb_Half_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "4",						  0, %100Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,							 "5",						  0, %1000Mb_Full_Duplex%
+
+HKR, Ndi\Params\JumboPacket,                   ParamDesc,              0, %JumboPacket%
+HKR, Ndi\Params\JumboPacket,                   default,                0, "1600"
+HKR, Ndi\Params\JumboPacket,                   min,                    0, "1600"
+HKR, Ndi\Params\JumboPacket,                   max,                    0, "9014"
+HKR, Ndi\Params\JumboPacket\Enum,              "1600",                 0, %Disabled%
+HKR, Ndi\Params\JumboPacket\Enum,              "4088",                 0, %Bytes4088%
+HKR, Ndi\Params\JumboPacket\Enum,              "9014",                 0, %Bytes9014%
+HKR, Ndi\Params\JumboPacket,                   type,                   0, "enum"
+
+[TcII2xxDel.reg]
+HKR, ,NumRfd
+HKR, Ndi\Params\NumRfd
+
+HKR, ,NumTcb
+HKR, Ndi\Params\NumTcb
+
+HKR, ,NumCoalesce
+HKR, Ndi\Params\NumCoalesce
+
+HKR, ,Threshold
+HKR, Ndi\Params\Threshold
+
+HKR, ,LinkSpeedDuplex
+HKR, Ndi\Params\LinkSpeedDuplex
+
+HKR, ,EnablePollingMode
+HKR, Ndi\Params\EnablePollingMode
+
+HKR, ,JumboPacket
+HKR, Ndi\Params\JumboPacket
+
+HKR, ,ITR
+HKR, Ndi\Params\ITR
+
+HKR, ,DMACoalescing
+HKR, Ndi\Params\DMACoalescing
+
+HKR, ,LogLinkStateEvent
+HKR, Ndi\Params\LogLinkStateEvent
+
+HKR, ,NetworkAddress
+HKR, Ndi\Params\NetworkAddress
+
+HKR, ,EEELinkAdvertisement
+HKR, Ndi\Params\EEELinkAdvertisement
+
+HKR, ,EnablePME
+HKR, Ndi\Params\EnablePME
+
+HKR, ,MasterSlave
+HKR, Ndi\Params\MasterSlave
+
+HKR, ,ReduceSpeedOnPowerDown
+HKR, Ndi\Params\ReduceSpeedOnPowerDown
+
+HKR, ,WaitAutoNegComplete
+HKR, Ndi\Params\WaitAutoNegComplete
+
+HKR, ,WakeOnLink
+HKR, Ndi\Params\WakeOnLink
+
+HKR, ,*PMARPOffload
+HKR, Ndi\Params\*PMARPOffload
+
+HKR, ,*PMNSOffload
+HKR, Ndi\Params\*PMNSOffload
+
+HKR, ,*WakeOnMagicPacket
+HKR, Ndi\Params\*WakeOnMagicPacket
+
+HKR, ,*WakeOnPattern
+HKR, Ndi\Params\*WakeOnPattern
+
+HKR, ,*EncapOverhead
+HKR, Ndi\Params\*EncapOverhead
+
+HKR, ,*FlowControl
+HKR, Ndi\Params\*FlowControl
+
+HKR, ,*InterruptModeration
+HKR, Ndi\Params\*InterruptModeration
+
+HKR, ,*IPChecksumOffloadIPV4
+HKR, Ndi\Params\*IPChecksumOffloadIPV4
+
+HKR, ,*JumboPacket
+HKR, Ndi\Params\*JumboPacket
+
+HKR, ,*IPSecOffloadV2
+HKR, Ndi\Params\*IPSecOffloadV2
+
+HKR, ,*LsoV1Pv4
+HKR, Ndi\Params\*LsoV1Pv4
+
+HKR, ,*LsoV2IPv4
+HKR, Ndi\Params\*LsoV2IPv4
+
+HKR, ,*LsoV2IPv6
+HKR, Ndi\Params\*LsoV2IPv6
+
+HKR, ,*NumRssQueues
+HKR, Ndi\Params\*NumRssQueues
+
+HKR, ,*PriorityVLANTag
+HKR, Ndi\Params\*PriorityVLANTag
+
+HKR, ,*ReceiveBuffers
+HKR, Ndi\Params\*ReceiveBuffers
+
+HKR, ,*RSS
+HKR, Ndi\Params\*RSS
+
+HKR, ,*SpeedDuplex
+HKR, Ndi\Params\*SpeedDuplex
+
+HKR, ,*TCPChecksumOffloadIPv4
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4
+
+HKR, ,*TCPChecksumOffloadIPv6
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6
+
+HKR, ,*TransmitBuffers
+HKR, Ndi\Params\*TransmitBuffers
+
+HKR, ,*UDPChecksumOffloadIPv4
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4
+
+HKR, ,*UDPChecksumOffloadIPv6
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6
+
+
+[TCI2XX.reg]
+HKR, Ndi,							Service,	 0, "TCI2XX"
+HKR, Ndi\Interfaces,				UpperRange, 0, "ndis5,tcether"
+HKR, Ndi\Interfaces,				LowerRange, 0, "ethernet"
+
+[TCI2XX.Service]
+DisplayName			= %TCI2XX.Service.DispName%
+ServiceType			= 1 ;%SERVICE_KERNEL_DRIVER%
+StartType			= 2 ;%SERVICE_AUTO_START%
+ErrorControl		= 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary		= %12%\TCI2XX.sys
+LoadOrderGroup		= NDIS
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,	0x00010001, 7
+
+[TCI2XX.CopyFiles]
+;TCI2XX.sys,,,2
+
+[SourceDisksNames]
+1 = "TwinCAT Driver Disk 1",TCI2XX.sys,,
+
+[SourceDisksFiles]
+TCI2XX.sys = 1,,
+;TcI8xxCo.dll = 1,,
+
+[DestinationDirs]
+TCI2XX.CopyFiles			= 12
+DefaultDestDirs				= 11
+
+[Strings]
+Intel						= "Intel"
+Bkhf						= "Beckhoff"
+
+TCI2XX.DeviceDesc			= "TwinCAT-Intel PCI Ethernet Adapter (Gigabit) V2"
+TCI2XX.Service.DispName		= "TwinCAT I2xx based Ethernet Adapter NT Driver"
+
+ReceiveFrameDescriptors		= "Receive Frame Descriptors"
+TransmitControlBlocks		= "Transmit Control Blocks"
+NumCoalesceBuffers			= "Coalesce Buffers"
+TxThreshold					= "Transmit Threshold"
+TxInterPacketGap			= "Transmit Inter Packet Gap(in byte)"
+JumboPacket					= "Jumbo Packet"
+
+AutoNegotiation				= "Auto Negotiation"
+SpeedDuplex					= "Link Speed & Duplex"
+10Mb_Half_Duplex			= "10 Mbps Half Duplex"
+10Mb_Full_Duplex			= "10 Mbps Full Duplex"
+100Mb_Half_Duplex			= "100 Mbps Half Duplex"
+100Mb_Full_Duplex			= "100 Mbps Full Duplex"
+1000Mb_Full_Duplex			= "1.0 Gbps Full Duplex"
+
+Disabled                    = "Disabled"
+Bytes4088					= "4088 Bytes"
+Bytes9014					= "9014 Bytes"

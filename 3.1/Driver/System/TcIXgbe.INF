@@ -1,0 +1,386 @@
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %Bkhf%
+Compatible  = 1
+DriverVer   = 07/08/2021,3.01.00.6
+CatalogFile = TcIXgbe.cat 
+
+[Manufacturer]
+%Intel%     = Intel,NTx86,NTia64,NTamd64
+
+;for W2k
+[Intel]
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1528	; Intel X540-AT2 ( X540-T1/X540-T2 )
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1515	; Intel X540_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1530	; Intel X540_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_155C	; Intel X540_VF_BYPASS
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1560	; Intel X540T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1563	; Intel X550T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15D1	; Intel X550T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C2	; Intel X550EM_A_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C3	; Intel X550EM_A_KR_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C4	; Intel X550EM_A_SFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C6	; Intel X550EM_A_SGMII
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C7	; Intel X550EM_A_SGMII_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C8	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CA	; Intel X550EM_A_QSFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CC	; Intel X550EM_A_QSFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CE	; Intel X550EM_A_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E4	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E5	; Intel X550EM_A_1G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AA	; Intel X550EM_X_KX4
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AB	; Intel X550EM_X_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AC	; Intel X550EM_X_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AD	; Intel X550EM_X_10_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AE	; Intel X550EM_X_1_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B0	; Intel X550EM_X_XFI
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1564	; Intel X550_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1565	; Intel X550_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C5	; Intel X550EM_A_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B4	; Intel X550EM_A_VF_HF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A8	; Intel X550EM_X_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A9	; Intel X550EM_X_VF_HV
+
+
+;for Xp and later
+[Intel.NTx86]
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1528	; Intel X540-AT2 ( X540-T1/X540-T2 )
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1515	; Intel X540_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1530	; Intel X540_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_155C	; Intel X540_VF_BYPASS
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1560	; Intel X540T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1563	; Intel X550T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15D1	; Intel X550T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C2	; Intel X550EM_A_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C3	; Intel X550EM_A_KR_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C4	; Intel X550EM_A_SFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C6	; Intel X550EM_A_SGMII
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C7	; Intel X550EM_A_SGMII_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C8	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CA	; Intel X550EM_A_QSFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CC	; Intel X550EM_A_QSFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CE	; Intel X550EM_A_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E4	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E5	; Intel X550EM_A_1G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AA	; Intel X550EM_X_KX4
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AB	; Intel X550EM_X_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AC	; Intel X550EM_X_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AD	; Intel X550EM_X_10_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AE	; Intel X550EM_X_1_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B0	; Intel X550EM_X_XFI
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1564	; Intel X550_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1565	; Intel X550_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C5	; Intel X550EM_A_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B4	; Intel X550EM_A_VF_HF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A8	; Intel X550EM_X_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A9	; Intel X550EM_X_VF_HV
+
+[Intel.NTia64]
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1528	; Intel X540-AT2 ( X540-T1/X540-T2 )
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1515	; Intel X540_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1530	; Intel X540_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_155C	; Intel X540_VF_BYPASS
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1560	; Intel X540T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1563	; Intel X550T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15D1	; Intel X550T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C2	; Intel X550EM_A_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C3	; Intel X550EM_A_KR_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C4	; Intel X550EM_A_SFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C6	; Intel X550EM_A_SGMII
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C7	; Intel X550EM_A_SGMII_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C8	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CA	; Intel X550EM_A_QSFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CC	; Intel X550EM_A_QSFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CE	; Intel X550EM_A_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E4	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E5	; Intel X550EM_A_1G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AA	; Intel X550EM_X_KX4
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AB	; Intel X550EM_X_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AC	; Intel X550EM_X_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AD	; Intel X550EM_X_10_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AE	; Intel X550EM_X_1_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B0	; Intel X550EM_X_XFI
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1564	; Intel X550_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1565	; Intel X550_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C5	; Intel X550EM_A_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B4	; Intel X550EM_A_VF_HF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A8	; Intel X550EM_X_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A9	; Intel X550EM_X_VF_HV
+
+[Intel.NTamd64]
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1528	; Intel X540-AT2 ( X540-T1/X540-T2 )
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1515	; Intel X540_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1530	; Intel X540_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_155C	; Intel X540_VF_BYPASS
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1560	; Intel X540T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1563	; Intel X550T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15D1	; Intel X550T1
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C2	; Intel X550EM_A_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C3	; Intel X550EM_A_KR_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C4	; Intel X550EM_A_SFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C6	; Intel X550EM_A_SGMII
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C7	; Intel X550EM_A_SGMII_L
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C8	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CA	; Intel X550EM_A_QSFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CC	; Intel X550EM_A_QSFP_N
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15CE	; Intel X550EM_A_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E4	; Intel X550EM_A_10G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15E5	; Intel X550EM_A_1G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AA	; Intel X550EM_X_KX4
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AB	; Intel X550EM_X_KR
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AC	; Intel X550EM_X_SFP
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AD	; Intel X550EM_X_10_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15AE	; Intel X550EM_X_1_G_T
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B0	; Intel X550EM_X_XFI
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1564	; Intel X550_VF_HV
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_1565	; Intel X550_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15C5	; Intel X550EM_A_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15B4	; Intel X550EM_A_VF_HF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A8	; Intel X550EM_X_VF
+%TCIXGBE.DeviceDesc%  = TCIXGBE.ndi,    PCI\VEN_8086&DEV_15A9	; Intel X550EM_X_VF_HV
+
+
+;-------------- Coinstaller installation
+;[TCIXGBE.ndi.NT.CoInstallers]
+;AddReg=CoInstaller_AddReg
+;CopyFiles=CoInstaller_CopyFiles
+
+;[CoInstaller_CopyFiles]
+;TcI8xxCo.dll
+
+;[CoInstaller_AddReg]
+;HKR,,CoInstallers32,0x00010000,"TcI8xxCo.dll,TcI825xxCoInstaller"
+
+;[TcIXgbeCoInfo] 
+;OriginalInfSourcePath = %1%
+
+[TCIXGBE.ndi.NT]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = Xgbe.reg, TCIXGBE.reg
+CopyFiles       = TCIXGBE.CopyFiles
+DelReg	        = TcIXgbeDel.reg
+
+[TCIXGBE.ndi.NT.Services]
+AddService = TCIXGBE, 2, TCIXGBE.Service, common.EventLog
+
+[Xgbe.reg]
+HKR, ,                          NumRfd,     0, "256"
+HKR, ,                          NumTcb,     0, "256"
+
+HKR, Ndi\params\NumRfd,         ParamDesc,  0, "%ReceiveFrameDescriptors%"
+HKR, Ndi\params\NumRfd,         default,    0, "256"
+HKR, Ndi\params\NumRfd,         min,        0, "32"
+HKR, Ndi\params\NumRfd,         max,        0, "4096"
+HKR, Ndi\params\NumRfd,         step,       0, "1"
+HKR, Ndi\params\NumRfd,         Base,       0, "10"
+HKR, Ndi\params\NumRfd,         type,       0, "int"
+
+HKR, Ndi\params\NumTcb,         ParamDesc,  0, "%TransmitControlBlocks%"
+HKR, Ndi\params\NumTcb,         default,    0, "256"
+HKR, Ndi\params\NumTcb,         min,        0, "32"
+HKR, Ndi\params\NumTcb,         max,        0, "4096"
+HKR, Ndi\params\NumTcb,         step,       0, "1"
+HKR, Ndi\params\NumTcb,         Base,       0, "10"
+HKR, Ndi\params\NumTcb,         type,       0, "int"
+
+HKR, Ndi\params\NumCoalesce,    ParamDesc,  0, "%NumCoalesceBuffers%"
+HKR, Ndi\params\NumCoalesce,    default,    0, "64"
+HKR, Ndi\params\NumCoalesce,    min,        0, "64"
+HKR, Ndi\params\NumCoalesce,    max,        0, "1024"
+HKR, Ndi\params\NumCoalesce,    step,       0, "1"
+HKR, Ndi\params\NumCoalesce,    Base,       0, "10"
+HKR, Ndi\params\NumCoalesce,    type,       0, "int"
+
+HKR, Ndi\params\Threshold,    ParamDesc,  0, "%TxThreshold%"
+HKR, Ndi\params\Threshold,    default,    0, "200"
+HKR, Ndi\params\Threshold,    min,        0, "1"
+HKR, Ndi\params\Threshold,    max,        0, "200"
+HKR, Ndi\params\Threshold,    step,       0, "1"
+HKR, Ndi\params\Threshold,    Base,       0, "10"
+HKR, Ndi\params\Threshold,    type,       0, "int"
+
+HKR, Ndi\params\TxPace,    ParamDesc,  0, "%TxPacing%"
+HKR, Ndi\params\TxPace,    default,    0, "0"
+HKR, Ndi\params\TxPace,    min,        0, "0"
+HKR, Ndi\params\TxPace,    max,        0, "15"
+HKR, Ndi\params\TxPace,    step,       0, "1"
+HKR, Ndi\params\TxPace,    Base,       0, "10"
+HKR, Ndi\params\TxPace,    type,       0, "int"
+
+HKR, Ndi\params\LinkSpeedDuplex,                           ParamDesc,              0, %SpeedDuplex%
+HKR, Ndi\params\LinkSpeedDuplex,                           default,                0, "0"
+HKR, Ndi\params\LinkSpeedDuplex,                           type,                   0, "enum"
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "0",                    0, %AutoNegotiation%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "4",                    0, %100Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "5",                    0, %1000Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "6",                    0, %2500Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "7",                    0, %5000Mb_Full_Duplex%
+HKR, Ndi\params\LinkSpeedDuplex\enum,                      "8",                    0, %10000Mb_Full_Duplex%
+
+HKR, Ndi\Params\JumboPacket,                   ParamDesc,              0, %JumboPacket%
+HKR, Ndi\Params\JumboPacket,                   default,                0, "1600"
+HKR, Ndi\Params\JumboPacket,                   min,                    0, "1600"
+HKR, Ndi\Params\JumboPacket,                   max,                    0, "9014"
+HKR, Ndi\Params\JumboPacket\Enum,              "1600",                 0, %Disabled%
+HKR, Ndi\Params\JumboPacket\Enum,              "4088",                 0, %Bytes4088%
+HKR, Ndi\Params\JumboPacket\Enum,              "9014",                 0, %Bytes9014%
+HKR, Ndi\Params\JumboPacket,                   type,                   0, "enum"
+
+
+[TcIXgbeDel.reg]
+HKR, ,NumRfd
+HKR, Ndi\Params\NumRfd
+
+HKR, ,NumTcb
+HKR, Ndi\Params\NumTcb
+
+HKR, ,NumCoalesce
+HKR, Ndi\Params\NumCoalesce
+
+HKR, ,Threshold
+HKR, Ndi\Params\Threshold
+
+HKR, ,TxPace
+HKR, Ndi\Params\TxPace
+
+HKR, ,LinkSpeedDuplex
+HKR, Ndi\Params\LinkSpeedDuplex
+
+HKR, ,EnablePollingMode
+HKR, Ndi\Params\EnablePollingMode
+
+HKR, ,JumboPacket
+HKR, Ndi\Params\JumboPacket
+
+HKR, ,ITR
+HKR, Ndi\Params\ITR
+
+HKR, ,DMACoalescing
+HKR, Ndi\Params\DMACoalescing
+
+HKR, ,LogLinkStateEvent
+HKR, Ndi\Params\LogLinkStateEvent
+
+HKR, ,NetworkAddress
+HKR, Ndi\Params\NetworkAddress
+
+HKR, ,*EncapOverhead
+HKR, Ndi\Params\*EncapOverhead
+
+HKR, ,*FlowControl
+HKR, Ndi\Params\*FlowControl
+
+HKR, ,*InterruptModeration
+HKR, Ndi\Params\*InterruptModeration
+
+HKR, ,*IPChecksumOffloadIPV4
+HKR, Ndi\Params\*IPChecksumOffloadIPV4
+
+HKR, ,*JumboPacket
+HKR, Ndi\Params\*JumboPacket
+
+HKR, ,*IPSecOffloadV2
+HKR, Ndi\Params\*IPSecOffloadV2
+
+HKR, ,*LsoV1Pv4
+HKR, Ndi\Params\*LsoV1Pv4
+
+HKR, ,*LsoV2IPv4
+HKR, Ndi\Params\*LsoV2IPv4
+
+HKR, ,*LsoV2IPv6
+HKR, Ndi\Params\*LsoV2IPv6
+
+HKR, ,*NumRssQueues
+HKR, Ndi\Params\*NumRssQueues
+
+HKR, ,*PriorityVLANTag
+HKR, Ndi\Params\*PriorityVLANTag
+
+HKR, ,*ReceiveBuffers
+HKR, Ndi\Params\*ReceiveBuffers
+
+HKR, ,*RSS
+HKR, Ndi\Params\*RSS
+
+HKR, ,*SpeedDuplex
+HKR, Ndi\Params\*SpeedDuplex
+
+HKR, ,*TCPChecksumOffloadIPv4
+HKR, Ndi\Params\*TCPChecksumOffloadIPv4
+
+HKR, ,*TCPChecksumOffloadIPv6
+HKR, Ndi\Params\*TCPChecksumOffloadIPv6
+
+HKR, ,*TransmitBuffers
+HKR, Ndi\Params\*TransmitBuffers
+
+HKR, ,*UDPChecksumOffloadIPv4
+HKR, Ndi\Params\*UDPChecksumOffloadIPv4
+
+HKR, ,*UDPChecksumOffloadIPv6
+HKR, Ndi\Params\*UDPChecksumOffloadIPv6
+
+[TCIXGBE.reg]
+HKR, Ndi,                       Service,    0, "TCIXGBE"
+HKR, Ndi\Interfaces,            UpperRange, 0, "ndis5,tcether"
+HKR, Ndi\Interfaces,            LowerRange, 0, "ethernet"
+
+[TCIXGBE.Service]
+DisplayName     = %TCIXGBE.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 2 ;%SERVICE_AUTO_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\TCIXGBE.sys
+LoadOrderGroup  = NDIS
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TCIXGBE.CopyFiles]
+;TCIXGBE.sys,,,2
+
+[SourceDisksNames]
+1 = "TwinCAT Driver Disk 1",TCIXGBE.sys,,
+
+[SourceDisksFiles]
+TCIXGBE.sys = 1,,
+;TcI8xxCo.dll = 1,,
+
+[DestinationDirs]
+TCIXGBE.CopyFiles         = 12
+DefaultDestDirs            = 11
+
+[Strings]
+Intel                      = "Intel"
+Bkhf                       = "Beckhoff"
+
+TCIXGBE.DeviceDesc        = "TwinCAT-Intel PCI Ethernet Adapter (10 Gigabit)"
+TCIXGBE.Service.DispName  = "TwinCAT based 10 Gigabit Ethernet Adapter NT Driver"
+
+ReceiveFrameDescriptors    = "Receive Frame Descriptors"
+TransmitControlBlocks      = "Transmit Control Blocks"
+NumCoalesceBuffers         = "Coalesce Buffers"
+TxThreshold				   = "Transmit Threshold"
+TxPacing				   = "Transmit Pacing Speed"
+JumboPacket				   = "Jumbo Packet"
+
+AutoNegotiation             = "Auto Negotiation"
+SpeedDuplex                 = "Link Speed & Duplex"
+100Mb_Full_Duplex           = "100 Mbps Full Duplex"
+1000Mb_Full_Duplex          = "1.0 Gbps Full Duplex"
+2500Mb_Full_Duplex          = "2.5 Gbps Full Duplex"
+5000Mb_Full_Duplex          = "5.0 Gbps Full Duplex"
+10000Mb_Full_Duplex         = "10.0 Gbps Full Duplex"
+
+Disabled                    = "Disabled"
+Bytes4088					= "4088 Bytes"
+Bytes9014					= "9014 Bytes"
+

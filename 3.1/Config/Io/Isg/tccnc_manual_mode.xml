@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited by Beckhoff (Beckhoff Automation GmbH) -->
+<TcParaDesc>
+	<StringList>
+		<String>
+			<Id>1001</Id>
+			<Text>Text Id 1001</Text>
+		</String>
+		<String>
+			<Id>1002</Id>
+			<Text>Text Id 1002</Text>
+		</String>
+		<String>
+			<Id>1003</Id>
+			<Text>Text Id 1003</Text>
+		</String>
+	</StringList>
+	<UnitList>
+		<Unit>
+			<UnitRef/>
+			<Unit/>
+		</Unit>
+	</UnitList>
+	<UserGroupList>
+		<UserGroup>Administrator</UserGroup>
+		<UserGroup>Supervisor</UserGroup>
+		<UserGroup>Superuser</UserGroup>
+		<UserGroup>User</UserGroup>
+		<UserGroup>No access</UserGroup>
+	</UserGroupList>
+	<DataTypes>
+		<DataType>
+			<Name>Data1</Name>
+			<Type>float</Type>
+		</DataType>
+		<DataType>
+			<Name>Data2</Name>
+			<Type>double</Type>
+		</DataType>
+	</DataTypes>
+	<ParaList>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">Hand wheel parameter</Text>
+				<Text LcId="1031">Handrad Parameter</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>hr_anzahl</Name>
+			<Nr>P-MANU-00001</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Number of hand wheels</Text>
+				<Text LcId="1031">Anzahl der Handr&#228;der</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.log_hr_nr</Name>
+			<Nr>P-MANU-00002</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Logic hand wheel number</Text>
+				<Text LcId="1031">Logische Handrad-Nummer</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.hr_aufl_z</Name>
+			<Nr>P-MANU-00005</Nr>
+			<Help/>
+			<Type>UNS32</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Numerator of hand wheel resolution</Text>
+				<Text LcId="1031">Z&#228;hler der Handradaufl&#246;sung</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">Inkr.</Text>
+				<Text LcId="1031">Inkr.</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.hr_aufl_n</Name>
+			<Nr>P-MANU-00006</Nr>
+			<Help/>
+			<Type>UNS32</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Denominator of hand wheel resolution</Text>
+				<Text LcId="1031">Nenner der Handradaufl&#246;sung</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">Umdr.</Text>
+				<Text LcId="1031">Umdr.</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.adr_hr_zaehler</Name>
+			<Nr>P-MANU-00004</Nr>
+			<Help/>
+			<Type>ADRESSE</Type>
+			<Default-Value>0x0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Index of handwheel counter in HLI</Text>
+				<Text LcId="1031">Index des Handradz&#228;hlers im HLI</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%&#35;x</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.max_inkr_pro_takt</Name>
+			<Nr>P-MANU-00007</Nr>
+			<Help/>
+			<Type>UNS32</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Upper limit for hand wheel increments per cycle</Text>
+				<Text LcId="1031">Obergrenze f&#252;r Handradinkremente / Takt</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">Inkr.</Text>
+				<Text LcId="1031">Inkr.</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>hr_data&#91;0&#93;.hr_abs_pos_init</Name>
+			<Nr>P-MANU-00000</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>6</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">Key parameter</Text>
+				<Text LcId="1031">Tasten Parameter</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>tasten_anzahl</Name>
+			<Nr>P-MANU-00008</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Count of inching key pairs</Text>
+				<Text LcId="1031">Anzahl der Tipptastenpaare</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>tasten_data&#91;0&#93;.log_tasten_nr</Name>
+			<Nr>P-MANU-00009</Nr>
+			<Help/>
+			<Type>UNS16</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Logic key number</Text>
+				<Text LcId="1031">Logische Tasten-Nummer.</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033"/>
+				<Text LcId="1031"/>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>9</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>Comment</Name>
+			<DisplayName>
+				<Text LcId="1033">Feedhold parameter</Text>
+				<Text LcId="1031">Feedhold Parameter</Text>
+			</DisplayName>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+		</Para>
+		<Para>
+			<Name>feedhold.hr_inkr_verwerfen</Name>
+			<Nr>P-MANU-00010</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Discard hand wheel increments while feedhold</Text>
+				<Text LcId="1031">Handradinkremente verwerfen bei Feedhold</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Active only on FEEDHOLD</Text>
+				<Text LcId="1031">Wirksam bei FEEDHOLD</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+		<Para>
+			<Name>feedhold.jog_inkr_verwerfen</Name>
+			<Nr>P-MANU-00011</Nr>
+			<Help/>
+			<Type>BOOLEAN</Type>
+			<Default-Value>0</Default-Value>
+			<DisplayName>
+				<Text LcId="1033">Jog mode travel distances discardedwhile feedhold</Text>
+				<Text LcId="1031">Jogverfahrwege verwerfen bei Feedhold</Text>
+			</DisplayName>
+			<Unit>
+				<Text LcId="1033">-</Text>
+				<Text LcId="1031">-</Text>
+			</Unit>
+			<Comment>
+				<Text LcId="1033">Active only on FEEDHOLD</Text>
+				<Text LcId="1031">Wirksam bei FEEDHOLD und Jobbetrieb</Text>
+			</Comment>
+			<Format>%d</Format>
+			<Property>
+				<Name/>
+				<PropRef/>
+			</Property>
+			<Visibility>
+				<UserGroup>1</UserGroup>
+			</Visibility>
+			<Changebility>
+				<UserGroup>1</UserGroup>
+			</Changebility>
+			<SystemChange>0</SystemChange>
+			<MaxArrayElemente1>0</MaxArrayElemente1>
+		</Para>
+	</ParaList>
+</TcParaDesc>

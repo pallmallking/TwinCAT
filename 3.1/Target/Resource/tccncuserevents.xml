@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- VERSION_V3.01.3074.3200_29.06.2021_14:00:00 -->
+<TcEventSources>
+	<Source>
+		<Id>651</Id>
+		<Id>652</Id>
+		<Id>653</Id>
+		<Id>654</Id>
+		<Id>655</Id>
+		<Id>656</Id>
+		<Id>657</Id>
+		<Id>658</Id>
+		<Id>659</Id>
+		<Id>660</Id>
+		<Id>661</Id>
+		<Id>662</Id>
+		<Id>663</Id>
+		<Id>664</Id>
+		<Id>665</Id>
+		<Id>666</Id>
+		<Id>667</Id>
+		<Id>668</Id>
+		<Id>669</Id>
+		<Id>670</Id>
+		<Id>671</Id>
+		<Id>672</Id>
+		<Id>673</Id>
+		<Id>674</Id>
+		<Id>675</Id>
+		<Id>676</Id>
+		<Id>677</Id>
+		<Id>678</Id>
+		<Id>679</Id>
+		<Id>680</Id>
+		<Id>681</Id>
+		<Id>682</Id>
+		<Id>683</Id>
+		<Id>684</Id>
+		<Id>685</Id>
+		<Id>686</Id>
+		<Id>687</Id>
+		<Id>688</Id>
+		<Id>689</Id>
+		<Id>690</Id>
+		<Id>691</Id>
+		<Id>692</Id>
+		<Id>693</Id>
+		<Id>694</Id>
+		<Id>695</Id>
+		<Id>696</Id>
+		<Id>697</Id>
+		<Id>698</Id>
+		<Id>699</Id>
+		<Name>CNC User Messages</Name>
+ 		<Event>
+			<Id>101</Id>
+      <Message LcId="2052">带有 1 个“％1”参数的消息</Message>
+			<Message LcId="1053">Message with one '%1' parameter</Message>
+			<Message LcId="1040">Message with one '%1' parameter</Message>
+			<Message LcId="1036">Message with one '%1' parameter</Message>
+			<Message LcId="1034">Message with one '%1' parameter</Message>
+			<Message LcId="1033">Message with one '%1' parameter</Message>
+			<Message LcId="1031">Meldung mit einem '%1' parameter</Message>
+		</Event>
+		<Event>
+			<Id>102</Id>
+      <Message LcId="2052">带有‘%1’和‘%2’2 个参数的消息</Message>
+			<Message LcId="1053">Message with two '%1', '%2' parameter</Message>
+			<Message LcId="1040">Message with two '%1', '%2' parameter</Message>
+			<Message LcId="1036">Message with two '%1', '%2' parameter</Message>
+			<Message LcId="1034">Message with two '%1', '%2' parameter</Message>
+			<Message LcId="1033">Message with two '%1', '%2' parameter</Message>
+			<Message LcId="1031">Meldung mit zwei '%1', '%2' parameter</Message>
+		</Event>
+		<Event>
+			<Id>103</Id>
+      <Message LcId="2052">消息‘%1’（模块‘%2’，行％3）</Message>
+			<Message LcId="1053">Message '%1' (Module '%2', Line %3)</Message>
+			<Message LcId="1040">Message '%1' (Module '%2', Line %3)</Message>
+			<Message LcId="1036">Message '%1' (Module '%2', Line %3)</Message>
+			<Message LcId="1034">Message '%1' (Module '%2', Line %3)</Message>
+			<Message LcId="1033">Message '%1' (Module '%2', Line %3)</Message>
+			<Message LcId="1031">Meldung '%1' (Modul '%2', Zeile %3)</Message>
+		</Event>
+		<Event>
+			<Id>104</Id>
+      <Message LcId="2052">消息‘%1’（模块‘%2’，行％3）BF 类型 %4 通道号 %5 KommuId. %6</Message>
+			<Message LcId="1053">Message '%1' (Module '%2', Line %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+			<Message LcId="1040">Message '%1' (Module '%2', Line %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+			<Message LcId="1036">Message '%1' (Module '%2', Line %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+			<Message LcId="1034">Message '%1' (Module '%2', Line %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+			<Message LcId="1033">Message '%1' (Module '%2', Line %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+			<Message LcId="1031">Meldung '%1' (Modul '%2', Zeile %3) BF-Type %4 Channel-Nr.%5 KommuId. %6</Message>
+		</Event>
+		<Event>
+			<Id>200</Id>
+			<!-- Rumpftyp : unbekannt, ID 1 bis 22 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 %16 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>	
+		<Event>
+			<Id>201</Id>
+			<!-- Rumpftyp : NC-Programm, additional ID 23 bis 30 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%28 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>202</Id>
+			<!-- Rumpftyp : NC-Programm-LR, additional ID 23 bis 27 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @N:%23 @PRG:%24 @FILE:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%26 @PINFO:%27 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>203</Id>
+			<!-- Rumpftyp : MDS, additional ID 23 bis 24 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+      </Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>204</Id>
+			<!-- Rumpftyp : Kommu, additional ID 23 bis 25 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @LISTTYPE:%23 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>205</Id>
+			<!-- Rumpftyp : RamDisk, additional ID 23 bis 27 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%26 @FOFFS:%27 @MEDIUM:%23 @CTYPE:%24 @PARTNER:%25 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>   
+		<Event>
+			<Id>206</Id>
+			<!-- Rumpftyp : File, additional ID 23 bis 24 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>207</Id>
+			<!-- Rumpftyp : IntprFile, additional ID 23 bis 27 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @FILE:%23 @FOFFS:%24 @FLINE:%25 @LTYPE:%26 @STRUCT:%27 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>208</Id>
+			<!-- Rumpftyp : Liste binaer, additional ID 23 bis 30 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @STRUCT:%23 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+		<Event>
+			<Id>209</Id>
+			<!-- Rumpftyp : GCM, additional ID 23 bis 30 -->
+			<Message LcId="2052">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1053">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1040">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1036">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1034">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1031">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+			<Message LcId="1033">
+				%1 '%13' @CH:%2 @CLASS:%3/%4 @TOKEN:%23 @FILE:%24 @V1:%14 @V2:%15 @V3:%16 @V4:%17 @V5:%18 @K1:%19 @K2:%20 @K3:%21 @K4:%22 @TYPE:%12 @PATH:%29 @FOFFS:%26 @BOFFS:%27 @TOFFS:%29 @PINFO:%30 @MODUL:%5 @LINE:%6 @MID:%7 @BF:%8 @COM:%9 @VER:%11 @TIME:%10
+			</Message>
+		</Event>
+	</Source>
+<Source>
+  <GUID>{3FD56AAE-0711-4359-89A5-3E1ECCCC634E}</GUID>
+  <Id>650</Id>
+  <Name>TwinCAT CNC User Errors</Name>
+  <Event>
+    <!-- User specific error messages: ID range 1 - 1000   -->
+    <Id>1</Id>
+    <Message LcId="1033">Error message ID1 (#ERROR[ID1])</Message>
+    <Message LcId="1031">Fehlermeldung ID1 (#ERROR[ID1])</Message>
+  </Event>
+  <Event>
+    <Id>2</Id>
+    <Message LcId="1033">Error message ID2 (#ERROR[ID2])</Message>
+    <Message LcId="1031">Fehlermeldung ID2 (#ERROR[ID2])</Message>
+  </Event>
+  <Event>
+    <Id>1000</Id>
+    <Message LcId="1033">Error message ID1000 (#ERROR[ID1000])</Message>
+    <Message LcId="1031">Fehlermeldung ID1000 (#ERROR[ID1000])</Message>
+  </Event>
+</Source>
+</TcEventSources>

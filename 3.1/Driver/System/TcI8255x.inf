@@ -1,0 +1,337 @@
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %Bkhf%
+Compatible  = 1
+DriverVer   = 03/22/2017,3.01.00.3500
+CatalogFile = TcI8255x.cat
+
+[Manufacturer]
+%Intel%     = Intel,NTx86,NTia64,NTamd64
+
+;for W2k
+[Intel]
+; DisplayName           Section       DeviceID
+; -----------           -------       --------
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1029   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1030   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1031   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1032   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1033   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1034   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1038   ; Intel PRO/100 VM/KM Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1039   ; Intel 82801CAM (PRO/100 VM Network Connection) ICH2
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103A   ; Intel 82801DB (LAN Controller with 82562ET/EZ (CNR) PHY) ICH4
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103B   ; Intel 82801DB (LAN Controller with 82562EM/EX PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103C   ; Intel 82801DB (LAN Controller with 82562EM/EX (CNR) PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103D   ; Intel 82801DB (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103E   ; Intel 82801DB (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1050   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH5
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1051   ; Intel 82801EB/ER (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1052   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1053   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1054   ; Intel 82801EB/ER (PRO/100 VE Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1055   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1056   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1057   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1059   ; Intel 82551QM PRO/100 M
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1064   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH6
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1065   ; Intel 82801FB/FR/FW/FRW
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1067   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1068   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1069   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106A   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106B   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1092   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1094   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1209   ; Intel 82551ER/IT, 82559ER
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1229   ; Intel 82557/8/9/0/1 (EtherExpress PRO/100(B) Adapter)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2449   ; 82801CAM i815 Boser (ICH2)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2459   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_245D   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_27DC   ; Intel(R) PRO/100 VE Network Connection
+;for Xp and later
+[Intel.NTx86]
+; DisplayName           Section       DeviceID
+; -----------           -------       --------
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1029   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1030   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1031   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1032   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1033   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1034   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1038   ; Intel PRO/100 VM/KM Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1039   ; Intel 82801CAM (PRO/100 VM Network Connection) ICH2
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103A   ; Intel 82801DB (LAN Controller with 82562ET/EZ (CNR) PHY) ICH4
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103B   ; Intel 82801DB (LAN Controller with 82562EM/EX PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103C   ; Intel 82801DB (LAN Controller with 82562EM/EX (CNR) PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103D   ; Intel 82801DB (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103E   ; Intel 82801DB (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1050   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH5
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1051   ; Intel 82801EB/ER (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1052   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1053   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1054   ; Intel 82801EB/ER (PRO/100 VE Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1055   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1056   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1057   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1059   ; Intel 82551QM PRO/100 M
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1064   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH6
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1065   ; Intel 82801FB/FR/FW/FRW
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1067   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1068   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1069   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106A   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106B   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1092   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1094   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1209   ; Intel 82551ER/IT, 82559ER
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1229   ; Intel 82557/8/9/0/1 (EtherExpress PRO/100(B) Adapter)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2449   ; 82801CAM i815 Boser (ICH2)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2459   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_245D   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_27DC   ; Intel(R) PRO/100 VE Network Connection
+
+[Intel.NTia64]
+; DisplayName           Section       DeviceID
+; -----------           -------       --------
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1029   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1030   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1031   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1032   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1033   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1034   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1038   ; Intel PRO/100 VM/KM Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1039   ; Intel 82801CAM (PRO/100 VM Network Connection) ICH2
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103A   ; Intel 82801DB (LAN Controller with 82562ET/EZ (CNR) PHY) ICH4
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103B   ; Intel 82801DB (LAN Controller with 82562EM/EX PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103C   ; Intel 82801DB (LAN Controller with 82562EM/EX (CNR) PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103D   ; Intel 82801DB (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103E   ; Intel 82801DB (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1050   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH5
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1051   ; Intel 82801EB/ER (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1052   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1053   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1054   ; Intel 82801EB/ER (PRO/100 VE Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1055   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1056   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1057   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1059   ; Intel 82551QM PRO/100 M
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1064   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH6
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1065   ; Intel 82801FB/FR/FW/FRW
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1067   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1068   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1069   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106A   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106B   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1092   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1094   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1209   ; Intel 82551ER/IT, 82559ER
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1229   ; Intel 82557/8/9/0/1 (EtherExpress PRO/100(B) Adapter)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2449   ; 82801CAM i815 Boser (ICH2)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2459   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_245D   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_27DC   ; Intel(R) PRO/100 VE Network Connection
+
+[Intel.NTamd64]
+; DisplayName           Section       DeviceID
+; -------
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1029   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1030   ; Intel 82559
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1031   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1032   ; 82801CAM (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1033   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1034   ; 82801CAM (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1038   ; Intel PRO/100 VM/KM Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1039   ; Intel 82801CAM (PRO/100 VM Network Connection) ICH2
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103A   ; Intel 82801DB (LAN Controller with 82562ET/EZ (CNR) PHY) ICH4
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103B   ; Intel 82801DB (LAN Controller with 82562EM/EX PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103C   ; Intel 82801DB (LAN Controller with 82562EM/EX (CNR) PHY)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103D   ; Intel 82801DB (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_103E   ; Intel 82801DB (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1050   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH5
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1051   ; Intel 82801EB/ER (PRO/100 VE Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1052   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1053   ; Intel 82801EB/ER (PRO/100 VM Network Connection)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1054   ; Intel 82801EB/ER (PRO/100 VE Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1055   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1056   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1057   ; Intel 82801EB/ER (PRO/100 VM Network Connection (mobile))
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1059   ; Intel 82551QM PRO/100 M
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1064   ; Intel 82801EB/ER (PRO/100 VE Network Connection) ICH6
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1065   ; Intel 82801FB/FR/FW/FRW
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1067   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1068   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1069   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106A   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_106B   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1092   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1094   ; 
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1209   ; Intel 82551ER/IT, 82559ER
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_1229   ; Intel 82557/8/9/0/1 (EtherExpress PRO/100(B) Adapter)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2449   ; 82801CAM i815 Boser (ICH2)
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_2459   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_245D   ; Intel(R) PRO/100 VE Network Connection
+%TCI8255X.DeviceDesc%  = TCI8255X.ndi,    PCI\VEN_8086&DEV_27DC   ; Intel(R) PRO/100 VE Network Connection
+
+
+; Intel 8255x Based PCI Ethernet Adapter (10/100) and Intel compatibles
+;
+; Windows NT specific entry
+[TCI8255X.ndi.NT]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 82557.reg, TCI8255X.reg
+CopyFiles       = TCI8255X.CopyFiles
+DelReg          = TcI8255xDel.reg
+
+[TCI8255X.ndi.NT.Services]
+AddService = TCI8255X, 2, TCI8255X.Service, common.EventLog
+
+;-----------------------------------------------------------------------------
+; common base for 10/100Mb Adapters
+;
+;-----------------------------------------------------------------------------
+; 82557 common
+;
+[82557.reg]
+HKR, ,                          NumRfd,     0, "256"
+HKR, ,                          NumTcb,     0, "256"
+
+
+HKR, Ndi\params\NumRfd,         ParamDesc,  0, "%ReceiveFrameDescriptors%"
+HKR, Ndi\params\NumRfd,         default,    0, "256"
+HKR, Ndi\params\NumRfd,         min,        0, "32"
+HKR, Ndi\params\NumRfd,         max,        0, "4096"
+HKR, Ndi\params\NumRfd,         step,       0, "1"
+HKR, Ndi\params\NumRfd,         Base,       0, "10"
+HKR, Ndi\params\NumRfd,         type,       0, "int"
+
+HKR, Ndi\params\NumTcb,         ParamDesc,  0, "%TransmitControlBlocks%"
+HKR, Ndi\params\NumTcb,         default,    0, "256"
+HKR, Ndi\params\NumTcb,         min,        0, "32"
+HKR, Ndi\params\NumTcb,         max,        0, "4096"
+HKR, Ndi\params\NumTcb,         step,       0, "1"
+HKR, Ndi\params\NumTcb,         Base,       0, "10"
+HKR, Ndi\params\NumTcb,         type,       0, "int"
+
+HKR, Ndi\params\NumCoalesce,    ParamDesc,  0, "%NumCoalesceBuffers%"
+HKR, Ndi\params\NumCoalesce,    default,    0, "64"
+HKR, Ndi\params\NumCoalesce,    min,        0, "64"
+HKR, Ndi\params\NumCoalesce,    max,        0, "1024"
+HKR, Ndi\params\NumCoalesce,    step,       0, "1"
+HKR, Ndi\params\NumCoalesce,    Base,       0, "10"
+HKR, Ndi\params\NumCoalesce,    type,       0, "int"
+
+HKR, Ndi\params\UnderrunRetry,    ParamDesc,  0, "%UnderRunRetry%"
+HKR, Ndi\params\UnderrunRetry,    default,    0, "1"
+HKR, Ndi\params\UnderrunRetry,    min,        0, "0"
+HKR, Ndi\params\UnderrunRetry,    max,        0, "1"
+HKR, Ndi\params\UnderrunRetry,    step,       0, "1"
+HKR, Ndi\params\UnderrunRetry,    Base,       0, "10"
+HKR, Ndi\params\UnderrunRetry,    type,       0, "int"
+
+HKR, Ndi\params\Threshold,    ParamDesc,  0, "%TxThreshold%"
+HKR, Ndi\params\Threshold,    default,    0, "200"
+HKR, Ndi\params\Threshold,    min,        0, "1"
+HKR, Ndi\params\Threshold,    max,        0, "200"
+HKR, Ndi\params\Threshold,    step,       0, "1"
+HKR, Ndi\params\Threshold,    Base,       0, "10"
+HKR, Ndi\params\Threshold,    type,       0, "int"
+
+HKR, Ndi\params\TxIpg,    ParamDesc,  0, "%TxInterPacketGap%"
+HKR, Ndi\params\TxIpg,    default,    0, "12"
+HKR, Ndi\params\TxIpg,    min,        0, "2"
+HKR, Ndi\params\TxIpg,    max,        0, "30"
+HKR, Ndi\params\TxIpg,    step,       0, "2"
+HKR, Ndi\params\TxIpg,    Base,       0, "10"
+HKR, Ndi\params\TxIpg,    type,       0, "int"
+
+
+;-----------------------------------------------------------------------------
+; TCI8255X NT specific
+;
+[TcI8255xDel.reg]
+HKR,,NumRfd
+HKR,,NumTcb
+HKR,,NumCoalesce
+HKR,,PhyAddress
+HKR,,Connector
+HKR,,TxFifo
+HKR,,RxFifo
+HKR,,TxDmaCount
+HKR,,RxDmaCount
+HKR,,UnderrunRetry
+HKR,,Threshold
+;HKR,,TxIpg
+HKR,,MWIEnable
+HKR,,Congest
+HKR,,SpeedDuplex
+HKR,,IgnoreOwnSourceMAC
+HKR,,EnablePollingMode
+
+[TCI8255X.reg]
+HKR, Ndi,                       Service,    0, "TCI8255X"
+; use ndis5 as the upper bound because NT supports it
+HKR, Ndi\Interfaces,            UpperRange, 0, "ndis5,tcether"
+HKR, Ndi\Interfaces,            LowerRange, 0, "ethernet"
+
+
+[TCI8255X.Service]
+DisplayName     = %TCI8255X.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 2 ;%SERVICE_AUTO_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\TcI8255x.sys
+LoadOrderGroup  = NDIS
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TCI8255X.install]
+CopyFiles = TCI8255X.win.CopyFiles
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[TCI8255X.CopyFiles]
+;TcI8255x.sys,,,2
+
+[SourceDisksNames]
+;
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+;
+1 = "TwinCAT Driver Disk 1",TcI8255x.sys,,
+
+[SourceDisksFiles]
+;
+; filename_on_source = diskID[, [subdir][, size]]
+;
+TcI8255x.sys = 1,, ; on distribution disk 1
+
+
+[DestinationDirs]
+TCI8255X.CopyFiles         = 12
+DefaultDestDirs            = 11
+
+[Strings]
+Msft                       = "Microsoft"
+Intel                      = "Intel"
+Bkhf                       = "Beckhoff"
+
+ReceiveFrameDescriptors    = "Receive Frame Descriptors"
+TransmitControlBlocks      = "Transmit Control Blocks"
+NumCoalesceBuffers         = "Coalesce Buffers"
+UnderRunRetry					= "Transmit Underrun Retry"
+TxThreshold						= "Transmit Threshold"
+TxInterPacketGap				= "Transmit Inter Packet Gap(in byte)"
+
+TCI8255X.DeviceDesc        = "TwinCAT-Intel PCI Ethernet Adapter"
+
+TCI8255X.Service.DispName  = "TwinCAT 8255x based Ethernet Adapter NT Driver"
+
